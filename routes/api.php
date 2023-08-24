@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::post('/auth/login','AuthController@loginUser')->name('auth.login');
+Route::post('/auth/register','AuthController@createUser')->name('auth.register');
+
+//DATA MANAGMENT
+Route::get('/raftarstock',[ApiController::class, 'GetRaftarStock'])->name('raftarstock');
+
+Route::get('chats','ApiController@GetChatsGroup')->name('chats');
