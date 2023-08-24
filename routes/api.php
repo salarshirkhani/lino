@@ -19,4 +19,6 @@ Route::post('/auth/register','AuthController@createUser')->name('auth.register')
 
 //DATA MANAGMENT
 Route::get('raftarstock', 'ApiController@GetRaftarStock')->name('raftarstock');
-Route::get('chats','ApiController@GetChatsGroup')->name('chats');
+Route::get('raftardarsadi', 'ApiController@Raftar_Darsadi_Tajmiei')->name('raftardarsadi');
+Route::get('smartdarsadi', 'ApiController@Smart_Darsadi')->name('smartdarsadi');
+Route::get('darsadisudgir', 'ApiController@Darsadi_SudGir')->name('darsadisudgir');

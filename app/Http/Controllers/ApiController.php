@@ -34,12 +34,29 @@ class ApiController extends Controller
         ]);
     }
 
-    public function GetChatsGroup(Request $request)
+    public function Raftar_Darsadi_Tajmiei()
     {
-        $chats=chat::where('support_id',$request->id)->get();
+        $support=DB::table('Raftar_Darsadi_Tajmiei')->get();
         return  response()->json( [
-        'chats' => $chats,
+        'support' => $support,
         ]);
     }
-    
+
+    public function Smart_Darsadi()
+    {
+        $support=DB::table('Smart_Darsadi')->get();
+        return  response()->json( [
+        'support' => $support,
+        ]);
+    }
+
+    public function Darsadi_SudGir()
+    {
+        $support=DB::table('Darsadi_SudGir')->get();
+        return  response()->json( [
+        'support' => $support,
+        ]);
+    }
+
+
 }
