@@ -1,0 +1,1514 @@
+@import "variable";
+@import "function";
+* {
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+}
+@font-face {
+    font-family: 'B_Koodak_Bold';
+    src:url('../font/B_Koodak_Bold_YasDL.com.ttf') format('truetype');
+        
+}
+@font-face {
+    font-family: 'B_Koodak_Outline';
+    src:url('../font/B_Koodak_Outline_YasDL.com.ttf') format('truetype');
+        
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'B_Koodak_Bold';
+}
+a {
+    @extend%a;
+}
+li {
+    list-style: none;
+    font-family: 'B_Koodak_Bold';
+    svg {
+        background-color: #95959C70;
+        border-radius: 50%;
+        width: 41px;
+        height: 41px;
+        outline: solid 4px  #95959C70;
+        margin-bottom: 2px;
+    }
+}
+
+// start style for page index.html 
+
+body.index {
+    // header style
+    @include header;
+    // end heder style
+
+    // start main style page
+    main {
+        // style sidebar and nav bar
+        @include side-bar;
+        // end sider bar contolor style
+
+        @include content; // box infomation
+
+        .Lino-basket-performance {
+            margin: 42px;
+            .Lino-basket {
+                button {
+                    @extend%button;
+                    padding: 2px 20px 4px 35px;
+                }
+            }
+            .Lino-perfor {
+                background: #F4F8F1;
+                border-radius: 2px;
+                padding: 50px 50px 0px 50px;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+
+                .right-performance {
+
+                    .title-table {
+                        h2 {
+                            color: #282927;
+                            text-align: right;
+                            font-family: "B_Koodak_Bold";
+                            font-size: 25px;
+                            padding-right: 5px;
+
+                        }
+                    }
+                    table, thead, tbody, th, td {
+                        display: block;
+                    }
+                    tr {
+                        display: flex;
+                    }
+                    table {
+                        width: 90%;
+                        text-align: center;
+                        thead {
+                            tr {
+    
+                                th:first-of-type{
+                                    border-radius: 0px 20px 0px 0px;
+                                    border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+                                    background: #B2EEEA;
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 20px;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    width: 50%;
+                                }
+                                th:nth-child(2){
+                                    border-radius: 20px 0px 0px 0px;
+                                    border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+                                    background: #B2EEEA;
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 20px;
+                                    padding-left: 5px;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    width: 50%;
+                                }
+                            }
+                        }
+                        tbody {
+                            height: 200px;
+                            overflow-y: scroll;
+                            background-color: white;
+                            tr {
+
+                                td:first-of-type {
+                                    color: rgba(0, 0, 0, 0.83);
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 16px;
+                                    border-collapse: collapse;
+                                    border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+                                    padding: 7px 0px 7px 0px;
+                                    width: 50%;
+                                }
+                                td:nth-child(2) {
+                                    color: #0ABA11;
+                                    text-align: center;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 16px;
+                                    border-bottom: 1px solid var(--32132, rgba(179, 239, 203, 0.35));
+                                    border-right: 1px solid var(--32132, rgba(179, 239, 203, 0.35));
+                                    padding: 7px 0px 7px 0px;
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                    // end table one Lino-basket-performance
+                }
+                .left-performance {
+                    @extend%flex;
+                    .tab {
+                        width: 61%;
+                        @extend%flex;
+                        margin-bottom: 30px;
+                        .header-green-tab {
+                            @extend%flex;
+                            flex-direction: row;
+                            border-radius: 17.204px 17.204px 0px 0px;
+                            background: #7FE27F;
+                            padding: 7px 17px;
+                            box-sizing: border-box;
+                            justify-content: space-around;
+                            width: 100%;
+                          
+                            h3 {
+                                color: #FFF;
+                                text-align: center;
+                                font-size: 24px;
+                                margin-left: 10px;
+                                margin-bottom: 0px;
+                            }
+                            p {
+                                margin-bottom: 0px;
+                                color: #FFF;
+                                font-size: 13px;
+                            }
+                        }
+                        .RED-style-tab {
+                            background:  #EE1D1D;
+                            @extend%flex;
+                            flex-direction: row;
+                            border-radius: 17.204px 17.204px 0px 0px;
+                            padding: 7px 17px;
+                            box-sizing: border-box;
+                            justify-content: space-around;
+                            width: 100%;
+                            h3 {
+                                color: #FFF;
+                                text-align: center;
+                                font-size: 24px;
+                                margin-left: 10px;
+                                margin-bottom: 0px;
+                            }
+                            p {
+                                margin-bottom: 0px;
+                                color: #FFF;
+                                font-size: 13px;
+                            }
+
+                        }
+                        .info-tab {
+                            background-color: white;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            span {
+                                color: rgba(102, 219, 91, 0.82);
+                                text-align: center;
+                                font-family: Dongle;
+                                font-size: 35px;
+                                font-style: normal;
+                                font-weight: 900;
+                                line-height: normal;
+                                margin: -12px 8px 0px 8px;
+                            }
+                            h4 {
+                                color: #303133;
+                                font-family: inherit;
+                                font-size: 34px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                margin-top: 10px;
+                            }
+                            .RED {
+                                color: #EE1D1D;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+
+        // section 2 style 
+        .Lino-performance-comparison {
+            margin: 100px 42px 200px 42px;
+            .Lino-comparison {
+                button {
+                    @extend%button;
+                    padding: 2px 20px 4px 35px;
+                }
+            }
+            .Lino-comparis {
+                background: #F4F8F1;
+                border-radius: 2px;
+                padding: 50px 50px 50px 50px;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+
+                .right-comparison {
+
+                    .title-box {
+                        margin-bottom: 15px;
+                        h2 {
+                            color: #282927;
+                            text-align: right;
+                            font-family: "B_Koodak_Bold";
+                            font-size: 25px;
+                            padding-right: 5px;
+
+                            svg:last-of-type {
+                                position: relative;
+                                right: -56px;
+                                margin-left: -45px;
+                            }
+
+                        }
+                    }
+                    .Lino-suggeste-basket {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 20px;
+                        border: 1px solid #FFF;
+                        background: rgba(1, 1, 1, 0.46);
+                        width: 75%;
+                        justify-content: flex-start;
+                        grid-gap: 32px;
+                        margin-right: 30px;
+                        background: linear-gradient(215deg, rgb(84 147 151 / 49%), rgba(0, 0, 0, 0.2784313725), #799078) padding-box;
+                        .header-box {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-top: 10px;
+                            h3 {
+                                color: #FFF;
+                                font-family: "B_Koodak_Bold";
+                                font-size: 24px;
+                                line-height: normal;
+                                margin: 0;
+                            }
+                            p {
+                                color: #FFF;
+                                font-family: "B_Koodak_Bold";
+                                font-size: 13px;
+                                line-height: normal;
+                            }
+                        }
+                        .button-box {
+                                margin-bottom: 35px;
+                            button {
+                                color: #515053;
+                                font-family: "B_Koodak_Bold";
+                                font-size: 19px;
+                                line-height: normal;
+                                padding: 0 8px;
+                                background: linear-gradient(#fff, #fff) padding-box,
+                                            linear-gradient(45deg, #FF6FE8, #A180FF, #7CD0FF, #654DFF, #E087EE) border-box;
+                                border: 2px solid transparent;
+                                border-radius: 50px;
+                                svg:first-of-type {
+                                    position: relative;
+                                    right: 48px;
+                                }
+                                svg:first-of-type + svg {
+                                    position: relative;
+                                    z-index: 1;
+                                    right: 2px;
+                                }
+                            }
+                        }
+                    }
+                    
+                    // end table one Lino-basket-performance
+                }
+                .left-comparison {
+                    @extend%flex;
+                }
+            }
+        }
+    }
+}
+// end style for index.html
+
+
+
+
+// start style for Stock-information.html
+
+body.Stock-information {
+    // header style
+   @include header;
+    // end heder style
+
+    // start main style page
+    main {
+        // style sidebar and nav bar
+        @include side-bar;
+        // end sider bar contolor style
+
+
+
+        @include content; // box infomation
+
+        
+        // start section 1
+        .Stocks {
+            margin: 42px;
+            .button-stock {
+                button {
+                    @extend%button;
+                }
+            }
+            .Lino-perfor {
+                background: #F4F8F1;
+                border-radius: 2px;
+                padding: 20px 20px 30px 20px;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+
+                .right-performance {
+
+                    .title-table { 
+                        display: flex;
+                        justify-content: flex-end;
+                        flex-direction: row-reverse;
+
+                        div.button {
+                            color: #282927;
+                            text-align: center;
+                            font-family: "B_Koodak_Bold";
+                            font-size: 18px;
+                            line-height: normal;
+                            padding: 2px 5px 3px 5px;
+                            border-radius: 20px 20px 0px 0px;
+                            border-bottom: 1px solid rgba(175, 227, 196, 0.48);
+                            background: #DDF8DD;
+                            border: none;
+                            margin-left: 41px;
+                            width: 23%;
+                            
+                        }
+                        @media (min-width:1350px) and (max-width:1740px) {
+                            div.button {
+                                width: 22%;
+                                
+                            }
+                        }
+                        @media (max-width:1349px) {
+                            div.button {
+                                width: 19%;
+                                margin-right: 17px;
+                                margin-left: 42px;
+                            }
+                        }
+                        div.buttonnn {
+                            width: 30%;
+                            margin-left: 21px;
+                        }
+                    }
+                    table, thead, tbody, th, td {
+                        display: block;
+                    }
+                    tr {
+                        display: flex;
+                    }
+                    table {
+                        width: 100%;
+                        text-align: center;
+                        thead{
+                            tr {
+                                border-radius: 20px 20px 0px 0px;
+                                border-bottom: 1.8px solid #E5F6EB;
+                                background: #FBFFFD;
+                                align-items: center;
+                                th{
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding-left: 5px;
+                                    padding-bottom: 5px;
+                                    
+                                }
+                                th:first-of-type{
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding-bottom: 5px;
+                                    width: 10%;
+                                    padding-top: 10px;
+                                    svg {
+                                        margin-right: 5px;
+                                    }
+                                }
+                                th:nth-child(2){
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding-left: 5px;
+                                    padding-top: 10px;
+                                    padding-bottom: 5px;
+                                    width: 21%;
+                                }
+                                th:nth-child(3){
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding-left: 5px;
+                                    padding-top: 10px;
+                                    padding-bottom: 5px;
+                                    width: 21%;
+                                    margin-left: 10px;
+                                }
+                                th.thh {
+                                    width: 8%;
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 17px;
+                                    padding: 0 9px 0 9px;
+                                    border-right: solid 2px #F3FFF9;
+                                }
+                                
+                            }
+                        }
+                        tbody {
+                            height: 200px;
+                            overflow-y: scroll;
+                            background-color: white;
+                            width: 101.4%;
+                            tr {
+                                border-bottom: 1.8px solid #E5F6EB;
+                                align-items: center;
+                                td{
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding-left: 5px;
+                                    padding-bottom: 5px;
+                                    
+                                }
+                                td:first-of-type{
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding-bottom: 5px;
+                                    width: 10%;
+                                    padding-top: 10px;
+                                }
+                                td:nth-child(2){
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding-left: 5px;
+                                    padding-top: 10px;
+                                    padding-bottom: 5px;
+                                    width: 21%;
+                                }
+                                td:nth-child(3){
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding-left: 5px;
+                                    padding-top: 10px;
+                                    padding-bottom: 5px;
+                                    width: 21%;
+                                    margin-left: 10px;
+                                }
+                                td.tdd-green {
+                                    @extend%cell-green;
+                                 }
+                                 td.tdd-red {
+                                    @extend%cell-red;
+                                 } 
+                                
+                            }
+                        }
+                    }
+                    // end table one Lino-basket-performance
+                }
+            }
+        }
+
+        // section 2 style 
+        .Beta-by-industry {
+            margin: 90px 42px 190px 42px;
+            .button-stock {
+                button#tab-1 {
+                   @extend%button;
+                   border-radius: 0px 20px 0px 0px;
+                }
+                button#tab-2 {
+                    @extend%button;
+                    border-radius:20px 0px 0px 0px;
+                    margin-right: -5px;    
+                    opacity: 0.5; 
+                }
+            }
+            .by-industry {
+                
+                background: #F4F8F1;
+                border-radius: 2px;
+                padding: 20px 20px 30px 20px;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+
+                .right-performance {
+
+                    table, thead, tbody, th, td {
+                        display: block;
+                    }
+                    tr {
+                        display: flex;
+                    }
+                    table {
+                        width: 100%;
+                        text-align: center;
+                        position: relative;
+                        z-index: 0;
+                        thead{
+                            tr {
+                                border-radius: 20px 20px 0px 0px;
+                                border-bottom: 1.8px solid #E5F6EB;
+                                background: #FBFFFD;
+                                align-items: center;
+        
+                                th{
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    width: 20%;
+                                    padding: 10px 5px 10px 5px;
+                                    word-break: break-all;
+                                    
+                                    button {
+                                        border: none;
+                                        background: #FBFFFD;
+                                        svg {
+                                            margin-right: 5px;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                    
+                                    form#searchbox_1 {
+                                        position: relative;
+                                        margin-right: 53%;
+                                        margin-top: -30px;
+                                        input[type = "search"] {
+                                            border-radius: 6px;
+                                            border: 1px solid darkseagreen;
+                                            padding-right: 6px;
+                                            width: 155%;
+                                        }
+                                        button {
+                                            display: none;
+                                        }
+                                           
+                                    }
+                                     
+                                }
+
+                            }
+                        }
+                        tbody {
+                            height: 200px;
+                            overflow-y: scroll;
+                            background-color: white;
+                            width: 101.4%;
+                            tr {
+                                border-bottom: 1.8px solid #E5F6EB;
+                                align-items: center;
+                                justify-content: space-around;
+                                td{
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding: 8px 0px 8px 24px;
+                                    width: 20%;
+                                    word-break: break-all;
+                                }
+                                td.tdd-green {
+                                   @extend%cell-green;
+                                   width: 20%;
+                                   border-right: none;
+                                }
+                                td.tdd-red {
+                                    @extend%cell-red;
+                                    width: 20%; 
+                                    border-right: none;
+                                }        
+                            }
+                        }
+                    }
+                    table#table-2 {
+                        width: 80%;
+                        position: relative;
+                        margin-top: -250px;
+                        z-index: -1;
+                        thead {
+                            tr {
+                                justify-content: space-around;
+                            } 
+                        }
+                        
+                        tbody {
+                            height: 200px;
+                            overflow-y: scroll;
+                            background-color: white;
+                            
+                        }    
+                    }   
+                }
+            }    
+        }
+        // end table   Beta-by-industry
+    }
+}
+// end style for for Stock-information.html
+
+
+
+// start style for for Percentages.html
+
+body.Percentages {
+    // header style
+   @include header;
+    // end heder style
+
+    // start main style page
+    main {
+        // style sidebar and nav bar
+        @include side-bar;
+        // end sider bar contolor style
+
+
+
+        @include content; // box infomation
+
+        
+        // start section 1
+        
+        .Performance-of-percentages {
+            margin: 50px 42px 80px 42px;
+            .button-stock {
+                button {
+                   @extend%button;
+                   border-radius: 20px 20px 0px 0px;
+                }
+            }
+            .of-percentages {
+                
+                background: #F4F8F1;
+                border-radius: 2px;
+                padding: 30px 20px 30px 20px;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+                .right-performance {
+                    table, thead, tbody, th, td {
+                        display: block;
+                    }
+                    tr {
+                        display: flex;
+                    }
+                    table {
+                        width: 100%;
+                        text-align: center;
+                        position: relative;
+                        z-index: 0;
+                        thead{
+                            tr {
+                                border-radius: 20px 20px 0px 0px;
+                                border-bottom: 1.8px solid #E5F6EB;
+                                background: #FBFFFD;
+                                align-items: center;
+        
+                                th{
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 16px;
+                                    width: 17%;
+                                    padding: 10px 0px 10px 0px;
+                                    word-break: keep-all;
+                                    button {
+                                        border: none;
+                                        background: #FBFFFD;
+                                        svg {
+                                            margin-right: 5px;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                    
+                                    form#searchbox_1 {
+                                        position: relative;
+                                        margin-right: 60%;
+                                        margin-top: -26px;
+                                        input[type = "search"] {
+                                            border-radius: 6px;
+                                            border: 1px solid darkseagreen;
+                                            padding-right: 6px;
+                                            width: 150%;
+                                        }
+                                        button {
+                                            display: none;
+                                        } 
+                                    }  
+                                }
+                            }
+                        }
+                        tbody {
+                            height: 200px;
+                            overflow-y: scroll;
+                            background-color: white;
+                            width: 101.4%;
+                            tr {
+                                border-bottom: 1.8px solid #E5F6EB;
+                                align-items: center;
+                                justify-content: space-around;
+                                td{
+                                    color: #000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 15px;
+                                    padding: 8px 0px 8px 24px;
+                                    width: 20%;
+                                    word-break: break-all;
+                                }
+                                td.tdd-green {
+                                   @extend%cell-green;
+                                   width: 20%;
+                                   border-right: none;
+                                }
+                                td.tdd-red {
+                                    @extend%cell-red;
+                                    width: 20%; 
+                                    border-right: none;
+                                }        
+                            }
+                        }
+                    }
+                        
+                }
+            }    
+        }
+        // end table Performance-of-percentages
+
+        // secton 2 
+        .Smart-and-knowledgeable {
+            margin: 50px 42px 190px 42px;
+            .and-knowledgeable {
+                button {
+                    @extend%button;
+                    padding: 2px 20px 4px 35px;
+                }
+            }
+            .Smart-and {
+                background: #F4F8F1;
+                border-radius: 2px;
+                padding: 30px 20px 30px 20px;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+
+                .right-performance {
+
+                    .title-table {
+                        p {
+                            color: #282927;
+                            text-align: right;
+                            font-family: "B_Koodak_Bold";
+                            font-size: 16px;
+                            padding-right: 5px;
+                    
+                            svg:last-of-type {
+                                position: relative;
+                                right: -56px;
+                                margin-left: -45px;
+                            }
+                            span {
+                                border-radius: 20px;
+                                background: rgba(218, 255, 211, 0.52);
+                                padding: 3px 8px;
+                            }
+                        }
+                    }
+                    table, thead, tbody, th, td {
+                        display: block;
+                    }
+                    tr {
+                        display: flex;
+                    }
+                    table {
+                        width: 90%;
+                        text-align: center;
+                        thead {
+                            tr {
+                                border-radius: 20px 20px 0px 0px;
+                                th{
+                                    border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+                                    background: #B2EEEA;
+                                    color: #ffffff;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    padding: 5px;
+                                    width: 50%;
+                                }
+                                th:nth-child(1){
+                                    border-radius: 0px 20px 0px 0px;
+                                    background: rgba(87, 94, 86, 0.72);
+                                }
+                                th:nth-child(2){
+                                    background: rgba(83, 58, 236, 0.37);
+                                }
+                                th:nth-child(3){
+                                    background: rgba(59, 201, 210, 0.69);
+                                }
+                                th:last-child{
+                                    border-radius: 20px 0px 0px 0px;
+                                    background: rgba(54, 225, 51, 0.68);
+                                }
+                            }
+                        }
+                        tbody {
+                            height: 200px;
+                            overflow-y: scroll;
+                            background-color: white;
+                            tr {
+                                td{
+                                    border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+                                    background: #ffffff;
+                                    color: #000000;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 15px;
+                                    padding: 5px;
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                    // end table one Lino-basket-performance
+                    .modal-xl {
+                        --bs-modal-width: 1250px;   
+                    }
+                    .modal-content {
+                        background: #F8FFFC;
+                        border-radius: 20px;
+                        border: none;
+                    }
+                    .modal-header {
+                        flex-direction: column;
+                        background: #4B4B50;
+                        border-radius: 20px 20px 0 0;
+                        .modal-title {
+                            color: #0CFF6D;
+                            text-align: center;
+                            font-size: 23px;
+                            line-height: normal;
+                        }
+                        .header-prec-title {
+                            margin-top: 5px;
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-evenly;
+                            .heder-prec-item {
+                                color: white;
+                            }
+                        }
+                    }
+                    .modal-body {
+                        margin: 15px;
+                        .pop-table {
+
+                            .head-table { 
+                                display: flex;
+                                justify-content: flex-end;
+                                flex-direction: row-reverse;
+        
+                                div.button {
+                                    color: #282927;
+                                    text-align: center;
+                                    font-family: "B_Koodak_Bold";
+                                    font-size: 18px;
+                                    line-height: normal;
+                                    padding: 2px 5px 3px 5px;
+                                    border-radius: 20px 20px 0px 0px;
+                                    border-right: 1px solid rgba(175, 227, 196, 0.48);
+                                    border-bottom: 1px solid rgba(175, 227, 196, 0.48);
+                                    border-left: 1px solid rgba(175, 227, 196, 0.48);
+                                    background: #E4ECE4;
+                                    margin-left: 0px;
+                                    width: 17.5%;
+                                    
+                                }
+                                div.buttonnn {
+                                    width: 30%;
+                                    margin-left: 0px;
+                                }
+                            }
+                            table, thead, tbody, th, td {
+                                display: block;
+                                
+                            }
+                            tr {
+                                display: flex;
+                            }
+                            table {
+                                width: 100%;
+                                text-align: center;
+                                thead{
+                                    tr {
+                                        border-radius: 0px 20px 0px 0px;
+                                        border-bottom: 1.8px solid #E5F6EB;
+                                        background: #ffffff;
+                                        align-items: center;
+                                        th{
+                                            color: #000;
+                                            font-family: "B_Koodak_Bold";
+                                            font-size: 18px;
+                                            padding-left: 5px;
+                                            padding-bottom: 5px;
+                                            border: none;
+                                            font-size: 16px;
+                                            padding-top: 10px;
+                                            width: 10%;
+                                            background-color: #fff;  
+                                        }
+                                        th:first-of-type{
+                                            svg {
+                                                margin-right: 5px;
+                                            }
+                                        }
+                        
+                                        th:nth-child(3){
+                                            margin-left: 10px;
+                                        }
+                                        th.thh {
+                                            width: 6%;
+                                            font-family: "B_Koodak_Bold";
+                                            font-size: 15px;
+                                            border-right: solid 2px #F3FFF9;
+                                        }
+                                        
+                                    }
+                                }
+                                tbody {
+                                    height: 200px;
+                                    overflow-y: scroll;
+                                    background-color: white;
+                                    width: 101.4%;
+                                    tr {
+                                        border-bottom: 1.8px solid #E5F6EB;
+                                        align-items: center;
+                                        td{
+                                            color: #000;
+                                            font-family: "B_Koodak_Bold";
+                                            font-size: 16px;
+                                            padding-bottom: 5px;
+                                            
+                                        }
+                                        td:first-of-type{
+                                            color: #000;
+                                            font-family: "B_Koodak_Bold";
+                                            font-size: 16px;
+                                            padding-bottom: 8px;
+                                            width: 10.1%;
+                                            padding-top: 10px;
+                                        }
+                                        td:nth-child(2){
+                                            color: #000;
+                                            font-family: "B_Koodak_Bold";
+                                            font-size: 16px;
+                                            padding: 10px 0px 8px 5px;
+                                            width: 10.1%;
+                                        }
+                                        td:nth-child(3){
+                                            color: #000;
+                                            font-family: "B_Koodak_Bold";
+                                            font-size: 16px;
+                                            padding: 10px 0px 8px 5px;
+                                            width: 10.1%;
+                                        }
+                                        td.tdd-green {
+                                            @extend%cell-green;
+                                            padding: 8px 5px 9px 5px;
+                                            width: 5.9%;
+                                        }
+                                        td.tdd-red {
+                                            @extend%cell-red;
+                                            padding: 8px 5px 9px 5px;
+                                            width: 5.9%;
+                                        } 
+                                        
+                                    }
+                                }
+                            }
+                             
+                        }// end table popup
+                    }    
+                }
+                .left-performance {
+                    @extend%flex;
+                    .box-guidance {
+                        @extend%flex;
+                        align-items: flex-start;
+                        margin-bottom: 30px;
+                        padding-bottom: 30px;
+                        border-radius: 25px;
+                        background: rgba(255, 255, 255, 0.77);
+                        width: 65%;
+                        p:nth-child(1) {
+                            @extend%pguide;
+                            & {
+                                span{
+                                    color: #9268D6;
+                                }
+                            }
+                        }
+                        p:nth-child(2) {
+                            @extend%pguide;
+                            font-size: 16px;
+                        
+                            span {
+                                color: #9268D6;
+                                margin-left: 2px;
+                            }
+                            svg {
+                                margin: 0 17px 0 8px;
+                            }
+                        }
+                        p:nth-child(3) {
+                            @extend%pguide;
+                            font-size: 16px;
+                            
+                            span {
+                                color:  #0FB8C2;
+                            }
+                            svg {
+                                margin: 0 7px;
+                            }
+
+                        }
+                        p:nth-child(4) {
+                            @extend%pguide;
+                            font-size: 16px;
+                            
+                            span {
+                                color: #34D026;
+                                margin-left: 0px;
+                            }
+                            svg {
+                                margin: 0 5px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// end style for for Percentages.html
+
+// start style for for login.html 
+
+
+body.login {
+    div.row-header {
+        display: flex;
+        width: 100%;
+        margin: 0px auto 10px auto;
+        align-items: center;
+        position: fixed;
+        left: 3px;
+        padding-top: 15px;
+        z-index: 4;
+        .calendar-header {
+            height: 65px;
+        }
+        .calender-item {
+            position: relative;
+            top: 13px;
+            left: 78px;
+        }
+        .calender-item-1 {
+            display: inline;
+            position: relative;
+            top: -18px;
+            font-size: 10px;
+            right: -85px;
+        }
+        .calender-item-2 {
+            display: inline;
+            position: relative;
+            top: 12px;
+            font-size: 14px;
+            right: -106px;
+        }
+        .calender-item-3 {
+            display: inline;
+            position: relative;
+            top: -48px;
+            font-size: 15px;
+            right: 12px;
+        }
+        .name-website {
+            color: #4B4B50;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            h1 {
+                font-family: unset !important;
+            }
+        }
+        .timer {
+            text-align: left;
+        }
+        .timer-item {
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            font-size: 20px;
+            right: -60px;
+        }
+    }
+    ::placeholder {
+        color: rgb(255, 255, 255);
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: rgb(255, 255, 255);
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+       color: rgb(255, 255, 255);
+      }
+ background-color: rgb(240, 255, 237);
+   .box_login {
+    margin: 6% auto;
+    width: 500px;
+    margin-top: 185px;
+    height: 520px;
+    border-radius: 30px;
+    border: 3px solid #FFF;
+    background: linear-gradient(139deg, rgba(134, 165, 123, 1.44) -10%, rgba(108, 152, 144, 0.46) 34.90%, rgba(62, 106, 124, 0.55) 67.19%, rgba(20, 27, 18, 0.70) 100%);
+        .svg_1 {
+            position: relative;
+            right: 38%;
+            top: -57px;
+        }
+        }
+        .svg_2 {
+            position: relative;
+            z-index: 1;
+            right: 17.2%;
+            top: -60px;
+        }
+   }
+   .form_login {
+
+    form {
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: wrap;
+        label:nth-child(1) {
+            background: rgba(217, 217, 217, 0.47);
+            border-radius: 0px 20px 20px 0px;
+            width: 60px;
+            height: 60px;
+            padding: 15px 16px;
+        }
+        input[type="tel"] {
+            font-family: "B_Koodak_Bold";
+            color: #FFF;
+            font-size: 18px;
+            margin-bottom: 36px;
+            padding: 16.5px 12px;
+            width: 82%;
+            border: none;
+            border-radius: 20px 0px 0px 20px;
+            background: rgba(255, 255, 255, 0.28);
+           
+        }
+        input[type="password"] {
+            font-family: "B_Koodak_Bold";
+            color: #FFF;
+            font-size: 18px;
+            padding: 16px 12px;
+            width: 82%;
+            border: none;
+            border-radius: 20px 0px 0px 20px;
+            background: rgba(255, 255, 255, 0.28);
+        }
+        input[type="button"] {
+            margin-bottom: 36px;
+            padding: 5px 0px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.82);
+            color: #21301F;
+            font-family: "B_Koodak_Bold";
+            border: none;
+            font-size: 32px;
+            width: 100%;
+            transition: all 0.3s ease-out;
+            &:hover {
+                transition: all 0.3s ease-out;
+                background: rgba(255, 255, 255, 0.3);
+            }
+        }
+        label:nth-child(4) {
+            background: rgba(217, 217, 217, 0.47);
+            border-radius: 0px 20px 20px 0px;
+            width: 60px;
+            height: 60px;
+            padding: 9px 13px;
+        }
+        p {
+            margin: 11px auto 40px auto;
+            a {
+                font-size: 16px;
+                color: var(--1, #E0EEFF);
+            }
+            
+        }
+    }
+
+
+}
+
+
+
+// start style for account.html
+
+body.account {
+
+    // header style
+   @include header;
+    // end heder style
+
+    // start main style page
+    main {
+        // style sidebar and nav bar
+        @include side-bar;
+        // end sider bar contolor style
+
+
+
+        @include content; // box infomation
+
+        
+        .info_account {
+            margin-top: 50px;
+            margin-right: 50px;
+            display: flex;
+
+            .box_1 {
+                @extend%box_account;
+                .info_user {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 30px;
+                    margin-bottom: 30px;
+                    margin-right: -25%;
+
+                    .avatar {
+
+                        >svg:first-child {
+                            position: relative;
+                            z-index: 1;
+                        }
+                        >svg:last-child {
+                            position: relative;
+                            left: 72px;
+                            
+                        }
+                    }
+                    .name_user {
+                        margin-right: -55px;
+
+                        h3 {
+                            color: #434345;
+                            font-size: 20px;
+                            line-height: normal;
+                        }
+                        p {
+                            color: #434345;
+                            font-size: 16px;
+                            line-height: normal;
+                        }
+                    }
+                }
+                .history_transactions {
+                    padding-bottom: 30px;
+
+                    >svg:first-child {
+                        position: relative;
+                        right: 50px;
+                    }
+                    >svg:nth-child(2) {
+                        position: absolute;
+                        z-index: 1;
+                        margin: 35px -110px 0px 0px;
+                    }
+                    >svg:last-child {
+                            position: absolute;
+                            margin-right: -90px;
+                            margin-top: -10px;
+                    }
+                }
+                .history_info {
+                    position: absolute;
+                    margin: -180px 120px 0px 0px;
+
+                    h5 {
+                        color: #FAFFFA;
+                        font-size: 17px;
+                        line-height: normal;
+                    }
+                    p {
+                        color: #BBBCBC;
+                        font-size: 11px;
+                        line-height: normal;
+                    }
+                }
+            }
+            .colume_2 {
+
+                .box_2 {
+                    @extend%box_account;
+                    padding: 15px 40px 1px 0px;
+                    margin-bottom: 20px;
+                    .subscription_type {
+                        h3 {
+                            color: #343434;
+                            text-align: right;
+                            font-size: 32px;
+                            line-height: normal;
+                            margin: 0px;
+                        }
+                        p {
+                            color: #444;
+                            text-align: right;
+                            font-size: 24px;
+                            line-height: normal;
+                            span:first-child {
+                                color: #444;
+                                font-size: 32px;
+                                line-height: normal;
+                            }
+                            span:last-child {
+                                color: #1BDE51;
+                                font-size: 32px;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+                .box_3 {
+                    @extend%box_account;
+                    text-align: center;
+                    h3 {
+                        color: #3D4342;
+                        font-size: 36px;
+                        font-family: inherit;
+                        line-height: normal;
+                        margin: 0 auto;
+                        margin-bottom: -81px;
+                        margin-top: 15px;
+                        padding-top: 46px;
+                        direction: ltr;
+                    }
+                    .chart {
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        height: 150px;
+                        canvas {
+                            position: relative;
+                        }
+                    }
+                    p {
+                        color: #2B2C2C;
+                        text-align: center;
+                        font-family: "B_Koodak_Bold";
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        position: relative;
+                        top: -60px;
+                    }
+                }
+            }
+            .colume_3 {
+
+                .box_4 {
+                    >svg {
+                        position: relative;
+                        right: 90%;
+                        top: -25px;
+                    }
+                    @extend%box_account;
+                    padding: 15px 40px 1px 0px;
+                    margin-bottom: 60px;
+                    .subscription_type {
+                        margin-top: -45px;
+                        margin-bottom: 25px;
+
+                        h3 {
+                            color: #272727;
+                            text-align: right;
+                            font-size: 24px;
+                            line-height: normal;
+                        }
+                       @include table_account;
+                    }
+                }
+
+
+                .box_5 {
+                    >svg {
+                        position: relative;
+                        right: 90%;
+                        top: -25px;
+                    }
+                    
+                    @extend%box_account;
+                    padding: 15px 40px 1px 0px;
+
+                    .subscription_type {
+                        margin-top: -45px;
+                        margin-bottom: 25px;
+
+                        h3 {
+                            color: #272727;
+                            text-align: right;
+                            font-size: 24px;
+                            line-height: normal;
+                        }
+                        @include table_account;
+                        
+                        td.td-box5{
+                            font-size: 12px;
+                            padding: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

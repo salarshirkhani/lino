@@ -1,0 +1,70 @@
+$width: 1378px;
+
+%a {
+    cursor: pointer;
+    font-family: 'B_Koodak_Bold';
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 13px;
+    line-height: normal;
+    text-decoration: none;
+}
+%flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+%red {
+        color: #EE1D1D;
+}
+
+%button {
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(100, 255, 162, 0.44);
+    color: #000;
+    text-align: right;
+    font-family: "B_Koodak_Bold";
+    font-size: 17px;
+    padding: 3px 39px 3px 39px;
+} 
+
+// for table
+%cell-red {
+    direction: ltr;
+    width: 8%;
+    text-align: center;
+    color:  #D81F1F;
+    font-family: "B_Koodak_Bold";
+    font-size: 17px;
+    padding: 8px 30px 8px 30px;
+    border-right: solid 2px #F3FFF9;
+}
+%cell-green {
+    direction: ltr;
+    width: 8%;
+    color: #1DC560;
+    font-family: "B_Koodak_Bold";
+    font-size: 17px;
+    padding: 8px 30px 8px 30px;
+    border-right: solid 2px #F3FFF9;
+}
+%pguide {
+    span {
+        font-size: 22px;
+        margin-left: 5px;
+    }
+    font-size: 18px;
+    margin: 20px 29px 0px 20px ;
+    svg {
+        margin-left: 10px;
+    }
+}
+
+%box_account {
+    width: 85%;
+    border-radius: 40px;
+    background: linear-gradient(180deg, rgba(178, 204, 168, 0.15) 0%, rgba(72, 160, 41, 0.15) 0.01%, rgba(60, 173, 221, 0.14) 100%);
+    min-width: 270px;
+}
+
+

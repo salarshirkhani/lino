@@ -1,0 +1,2257 @@
+@charset "UTF-8";
+a {
+  cursor: pointer;
+  font-family: "B_Koodak_Bold";
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 13px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance, body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance, body.index main .Lino-performance-comparison .Lino-comparis .left-comparison, body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .RED-style-tab, body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .header-green-tab, body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab, body.index main .Lino-basket-performance .Lino-perfor .left-performance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.Percentages main .Smart-and-knowledgeable .and-knowledgeable button, body.Percentages main .Performance-of-percentages .button-stock button, body.Stock-information main .Beta-by-industry .button-stock button#tab-2, body.Stock-information main .Beta-by-industry .button-stock button#tab-1, body.Stock-information main .Stocks .button-stock button, body.index main .Lino-performance-comparison .Lino-comparison button, body.index main .Lino-basket-performance .Lino-basket button {
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  background: rgba(100, 255, 162, 0.44);
+  color: #000;
+  text-align: right;
+  font-family: "B_Koodak_Bold";
+  font-size: 17px;
+  padding: 3px 39px 3px 39px;
+}
+
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody tr td.tdd-red, body.Percentages main .Performance-of-percentages .of-percentages .right-performance table tbody tr td.tdd-red, body.Stock-information main .Beta-by-industry .by-industry .right-performance table tbody tr td.tdd-red, body.Stock-information main .Stocks .Lino-perfor .right-performance table tbody tr td.tdd-red {
+  direction: ltr;
+  width: 8%;
+  text-align: center;
+  color: #D81F1F;
+  font-family: "B_Koodak_Bold";
+  font-size: 17px;
+  padding: 8px 30px 8px 30px;
+  border-right: solid 2px #F3FFF9;
+}
+
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody tr td.tdd-green, body.Percentages main .Performance-of-percentages .of-percentages .right-performance table tbody tr td.tdd-green, body.Stock-information main .Beta-by-industry .by-industry .right-performance table tbody tr td.tdd-green, body.Stock-information main .Stocks .Lino-perfor .right-performance table tbody tr td.tdd-green {
+  direction: ltr;
+  width: 8%;
+  color: #1DC560;
+  font-family: "B_Koodak_Bold";
+  font-size: 17px;
+  padding: 8px 30px 8px 30px;
+  border-right: solid 2px #F3FFF9;
+}
+
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(4), body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(3), body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(2), body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(1) {
+  font-size: 18px;
+  margin: 20px 29px 0px 20px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(4) span, body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(3) span, body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(2) span, body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(1) span {
+  font-size: 22px;
+  margin-left: 5px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(4) svg, body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(3) svg, body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(2) svg, body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(1) svg {
+  margin-left: 10px;
+}
+
+body.account main .info_account .colume_3 .box_5, body.account main .info_account .colume_3 .box_4, body.account main .info_account .colume_2 .box_3, body.account main .info_account .colume_2 .box_2, body.account main .info_account .box_1 {
+  width: 85%;
+  border-radius: 40px;
+  background: linear-gradient(180deg, rgba(178, 204, 168, 0.15) 0%, rgba(72, 160, 41, 0.15) 0.01%, rgba(60, 173, 221, 0.14) 100%);
+  min-width: 270px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  direction: rtl;
+}
+
+@font-face {
+  font-family: "B_Koodak_Bold";
+  src: url("../font/B_Koodak_Bold_YasDL.com.ttf") format("truetype");
+}
+@font-face {
+  font-family: "B_Koodak_Outline";
+  src: url("../font/B_Koodak_Outline_YasDL.com.ttf") format("truetype");
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "B_Koodak_Bold";
+}
+
+li {
+  list-style: none;
+  font-family: "B_Koodak_Bold";
+}
+li svg {
+  background-color: rgba(149, 149, 156, 0.4392156863);
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+  outline: solid 4px rgba(149, 149, 156, 0.4392156863);
+  margin-bottom: 2px;
+}
+
+body.index div.row-header {
+  display: flex;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  margin: 0px auto 10px auto;
+  align-items: center;
+  position: fixed;
+  left: 3px;
+  padding-top: 15px;
+  z-index: 4;
+}
+body.index div.row-header .calendar-header {
+  height: 65px;
+}
+body.index div.row-header .calender-item {
+  position: relative;
+  top: 13px;
+  left: 78px;
+}
+body.index div.row-header .calender-item-1 {
+  display: inline;
+  position: relative;
+  top: -18px;
+  font-size: 10px;
+  right: -85px;
+}
+body.index div.row-header .calender-item-2 {
+  display: inline;
+  position: relative;
+  top: 12px;
+  font-size: 14px;
+  right: -106px;
+}
+body.index div.row-header .calender-item-3 {
+  display: inline;
+  position: relative;
+  top: -48px;
+  font-size: 15px;
+  right: 12px;
+}
+body.index div.row-header .name-website {
+  color: #4B4B50;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body.index div.row-header .name-website h1 {
+  font-family: unset !important;
+}
+body.index div.row-header .timer {
+  text-align: left;
+}
+body.index div.row-header .timer-item {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  right: -60px;
+}
+body.index main aside {
+  margin-right: -13px;
+}
+body.index main aside div.aside-nav-bar {
+  width: 85px;
+  height: 611px;
+  margin-top: 82px;
+  border-radius: 120px 0px 0px 120px;
+  background: #4B4B50;
+}
+body.index main aside div.aside-nav-bar::after {
+  content: " ";
+  display: block;
+  margin-left: 90px;
+  margin-top: -31px;
+  box-shadow: 10px 10px 100px 43px rgba(175, 227, 196, 0.48);
+}
+body.index main aside div.aside-nav-bar::before {
+  content: " ";
+  position: relative;
+  display: block;
+  top: 563px;
+  left: 57px;
+  box-shadow: 10px 10px 100px 45px rgba(175, 227, 196, 0.48);
+}
+body.index main aside div.aside-nav-bar .menu-items {
+  display: flex;
+  flex-direction: column;
+  top: 152px;
+  position: absolute;
+  align-items: center;
+  width: 117px;
+}
+body.index main aside div.aside-nav-bar .menu-item {
+  width: 100%;
+  padding: 0px 10px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 55px;
+}
+body.index main aside div.aside-nav-bar .font-side > a {
+  font-size: 12px;
+}
+body.index main aside div.aside-nav-bar .active {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 204px;
+  background-color: #4B4B50;
+  color: #0CFF6D;
+  right: 63px;
+  border-radius: 100%;
+  z-index: 1;
+  padding-top: 15px;
+  text-align: center;
+}
+body.index main aside div.aside-nav-bar .active svg {
+  margin-top: -3px;
+}
+body.index main aside div.aside-nav-bar .active svg path {
+  fill: #0CFF6D;
+}
+body.index main aside div.aside-nav-bar .active p {
+  display: none;
+}
+body.index main aside div.aside-nav-bar .desing-nav-1 {
+  position: relative;
+  top: 263px;
+  right: 38px;
+  box-shadow: 10px 10px 100px 0px rgba(175, 227, 196, 0.48);
+  border-radius: 45px;
+}
+body.index main aside div.aside-nav-bar .select-item {
+  position: relative;
+  top: 263px;
+  right: 53px;
+  box-shadow: 10px 10px 100px 0px rgba(175, 227, 196, 0.48);
+  border-radius: 45px;
+}
+body.index main .content .main-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body.index main .content .main-row > .col-md-3 {
+  width: 21%;
+}
+body.index main .content .main-row > .col-md-3 .item-main {
+  width: 165px;
+  height: 97px;
+  margin-top: 145px;
+  margin-right: 69px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 2.5px solid #296F45;
+}
+body.index main .content .main-row > .col-md-3 .item-main::after {
+  content: "";
+  width: 147px;
+  height: 97px;
+  display: block;
+  position: relative;
+  z-index: -1;
+  margin-right: 69px;
+  border-radius: 20px;
+  background: rgba(179, 239, 203, 0.35);
+  top: -158px;
+  left: 85px;
+}
+body.index main .content .main-row > .col-md-3 .item-main h4 {
+  color: rgba(29, 29, 30, 0.92);
+  text-align: right;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+body.index main .content .main-row > .col-md-3 .item-main > p:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.65);
+  text-align: right;
+  font-size: 18px;
+  position: relative;
+  top: 5px;
+  right: 10px;
+}
+body.index main .content .main-row > .col-md-3 .item-main > p:nth-of-type(2) {
+  color: #38AF3C;
+  text-align: right;
+  position: relative;
+  font-size: 18px;
+  top: -13px;
+  right: 10px;
+}
+body.index main .content .main-row > .col-md-3 .item-main svg {
+  position: relative;
+  position: relative;
+  top: -112px;
+  right: 133px;
+}
+body.index main .content .main-row > .col-md-3 .RED-style {
+  border: 2.5px solid #CB0808;
+}
+body.index main .content .main-row > .col-md-3 .RED-style::after {
+  border-radius: 20px;
+  background: rgba(239, 179, 190, 0.35);
+}
+body.index main .content .main-row > .col-md-3 .RED-style > p:nth-of-type(2) {
+  color: #EE1D1D;
+}
+body.index main .content .main-row > .col-md-3 .RED-style svg {
+  transform: rotate(180deg);
+}
+body.index main .content .main-row > .col-md-3 .RED-style svg path {
+  fill: #EE1D1D;
+}
+body.index main .content .main-row > .col-md-3 .RED-style + svg path {
+  fill: #EE1D1D;
+}
+body.index main .content .main-row > .col-md-3 svg {
+  position: relative;
+  right: 233px;
+  top: -20px;
+}
+body.index main .Lino-basket-performance {
+  margin: 42px;
+}
+body.index main .Lino-basket-performance .Lino-basket button {
+  padding: 2px 20px 4px 35px;
+}
+body.index main .Lino-basket-performance .Lino-perfor {
+  background: #F4F8F1;
+  border-radius: 2px;
+  padding: 50px 50px 0px 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+body.index main .Lino-basket-performance .Lino-perfor .right-performance .title-table h2 {
+  color: #282927;
+  text-align: right;
+  font-family: "B_Koodak_Bold";
+  font-size: 25px;
+  padding-right: 5px;
+}
+body.index main .Lino-basket-performance .Lino-perfor .right-performance table, body.index main .Lino-basket-performance .Lino-perfor .right-performance thead, body.index main .Lino-basket-performance .Lino-perfor .right-performance tbody, body.index main .Lino-basket-performance .Lino-perfor .right-performance th, body.index main .Lino-basket-performance .Lino-perfor .right-performance td {
+  display: block;
+}
+body.index main .Lino-basket-performance .Lino-perfor .right-performance tr {
+  display: flex;
+}
+body.index main .Lino-basket-performance .Lino-perfor .right-performance table {
+  width: 90%;
+  text-align: center;
+}
+body.index main .Lino-basket-performance .Lino-perfor .right-performance table thead tr th:first-of-type {
+  border-radius: 0px 20px 0px 0px;
+  border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+  background: #B2EEEA;
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 50%;
+}
+body.index main .Lino-basket-performance .Lino-perfor .right-performance table thead tr th:nth-child(2) {
+  border-radius: 20px 0px 0px 0px;
+  border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+  background: #B2EEEA;
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 50%;
+}
+body.index main .Lino-basket-performance .Lino-perfor .right-performance table tbody {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: white;
+}
+body.index main .Lino-basket-performance .Lino-perfor .right-performance table tbody tr td:first-of-type {
+  color: rgba(0, 0, 0, 0.83);
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  border-collapse: collapse;
+  border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+  padding: 7px 0px 7px 0px;
+  width: 50%;
+}
+body.index main .Lino-basket-performance .Lino-perfor .right-performance table tbody tr td:nth-child(2) {
+  color: #0ABA11;
+  text-align: center;
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  border-bottom: 1px solid var(--32132, rgba(179, 239, 203, 0.35));
+  border-right: 1px solid var(--32132, rgba(179, 239, 203, 0.35));
+  padding: 7px 0px 7px 0px;
+  width: 50%;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab {
+  width: 61%;
+  margin-bottom: 30px;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .header-green-tab {
+  flex-direction: row;
+  border-radius: 17.204px 17.204px 0px 0px;
+  background: #7FE27F;
+  padding: 7px 17px;
+  box-sizing: border-box;
+  justify-content: space-around;
+  width: 100%;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .header-green-tab h3 {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .header-green-tab p {
+  margin-bottom: 0px;
+  color: #FFF;
+  font-size: 13px;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .RED-style-tab {
+  background: #EE1D1D;
+  flex-direction: row;
+  border-radius: 17.204px 17.204px 0px 0px;
+  padding: 7px 17px;
+  box-sizing: border-box;
+  justify-content: space-around;
+  width: 100%;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .RED-style-tab h3 {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .RED-style-tab p {
+  margin-bottom: 0px;
+  color: #FFF;
+  font-size: 13px;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .info-tab {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .info-tab span {
+  color: rgba(102, 219, 91, 0.82);
+  text-align: center;
+  font-family: Dongle;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin: -12px 8px 0px 8px;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .info-tab h4 {
+  color: #303133;
+  font-family: inherit;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 10px;
+}
+body.index main .Lino-basket-performance .Lino-perfor .left-performance .tab .info-tab .RED {
+  color: #EE1D1D;
+}
+body.index main .Lino-performance-comparison {
+  margin: 100px 42px 200px 42px;
+}
+body.index main .Lino-performance-comparison .Lino-comparison button {
+  padding: 2px 20px 4px 35px;
+}
+body.index main .Lino-performance-comparison .Lino-comparis {
+  background: #F4F8F1;
+  border-radius: 2px;
+  padding: 50px 50px 50px 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .title-box {
+  margin-bottom: 15px;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .title-box h2 {
+  color: #282927;
+  text-align: right;
+  font-family: "B_Koodak_Bold";
+  font-size: 25px;
+  padding-right: 5px;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .title-box h2 svg:last-of-type {
+  position: relative;
+  right: -56px;
+  margin-left: -45px;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .Lino-suggeste-basket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #FFF;
+  background: rgba(1, 1, 1, 0.46);
+  width: 75%;
+  justify-content: flex-start;
+  grid-gap: 32px;
+  margin-right: 30px;
+  background: linear-gradient(215deg, rgba(84, 147, 151, 0.49), rgba(0, 0, 0, 0.2784313725), #799078) padding-box;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .Lino-suggeste-basket .header-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .Lino-suggeste-basket .header-box h3 {
+  color: #FFF;
+  font-family: "B_Koodak_Bold";
+  font-size: 24px;
+  line-height: normal;
+  margin: 0;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .Lino-suggeste-basket .header-box p {
+  color: #FFF;
+  font-family: "B_Koodak_Bold";
+  font-size: 13px;
+  line-height: normal;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .Lino-suggeste-basket .button-box {
+  margin-bottom: 35px;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .Lino-suggeste-basket .button-box button {
+  color: #515053;
+  font-family: "B_Koodak_Bold";
+  font-size: 19px;
+  line-height: normal;
+  padding: 0 8px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, #FF6FE8, #A180FF, #7CD0FF, #654DFF, #E087EE) border-box;
+  border: 2px solid transparent;
+  border-radius: 50px;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .Lino-suggeste-basket .button-box button svg:first-of-type {
+  position: relative;
+  right: 48px;
+}
+body.index main .Lino-performance-comparison .Lino-comparis .right-comparison .Lino-suggeste-basket .button-box button svg:first-of-type + svg {
+  position: relative;
+  z-index: 1;
+  right: 2px;
+}
+body.Stock-information div.row-header {
+  display: flex;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  margin: 0px auto 10px auto;
+  align-items: center;
+  position: fixed;
+  left: 3px;
+  padding-top: 15px;
+  z-index: 4;
+}
+body.Stock-information div.row-header .calendar-header {
+  height: 65px;
+}
+body.Stock-information div.row-header .calender-item {
+  position: relative;
+  top: 13px;
+  left: 78px;
+}
+body.Stock-information div.row-header .calender-item-1 {
+  display: inline;
+  position: relative;
+  top: -18px;
+  font-size: 10px;
+  right: -85px;
+}
+body.Stock-information div.row-header .calender-item-2 {
+  display: inline;
+  position: relative;
+  top: 12px;
+  font-size: 14px;
+  right: -106px;
+}
+body.Stock-information div.row-header .calender-item-3 {
+  display: inline;
+  position: relative;
+  top: -48px;
+  font-size: 15px;
+  right: 12px;
+}
+body.Stock-information div.row-header .name-website {
+  color: #4B4B50;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body.Stock-information div.row-header .name-website h1 {
+  font-family: unset !important;
+}
+body.Stock-information div.row-header .timer {
+  text-align: left;
+}
+body.Stock-information div.row-header .timer-item {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  right: -60px;
+}
+body.Stock-information main aside {
+  margin-right: -13px;
+}
+body.Stock-information main aside div.aside-nav-bar {
+  width: 85px;
+  height: 611px;
+  margin-top: 82px;
+  border-radius: 120px 0px 0px 120px;
+  background: #4B4B50;
+}
+body.Stock-information main aside div.aside-nav-bar::after {
+  content: " ";
+  display: block;
+  margin-left: 90px;
+  margin-top: -31px;
+  box-shadow: 10px 10px 100px 43px rgba(175, 227, 196, 0.48);
+}
+body.Stock-information main aside div.aside-nav-bar::before {
+  content: " ";
+  position: relative;
+  display: block;
+  top: 563px;
+  left: 57px;
+  box-shadow: 10px 10px 100px 45px rgba(175, 227, 196, 0.48);
+}
+body.Stock-information main aside div.aside-nav-bar .menu-items {
+  display: flex;
+  flex-direction: column;
+  top: 152px;
+  position: absolute;
+  align-items: center;
+  width: 117px;
+}
+body.Stock-information main aside div.aside-nav-bar .menu-item {
+  width: 100%;
+  padding: 0px 10px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 55px;
+}
+body.Stock-information main aside div.aside-nav-bar .font-side > a {
+  font-size: 12px;
+}
+body.Stock-information main aside div.aside-nav-bar .active {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 204px;
+  background-color: #4B4B50;
+  color: #0CFF6D;
+  right: 63px;
+  border-radius: 100%;
+  z-index: 1;
+  padding-top: 15px;
+  text-align: center;
+}
+body.Stock-information main aside div.aside-nav-bar .active svg {
+  margin-top: -3px;
+}
+body.Stock-information main aside div.aside-nav-bar .active svg path {
+  fill: #0CFF6D;
+}
+body.Stock-information main aside div.aside-nav-bar .active p {
+  display: none;
+}
+body.Stock-information main aside div.aside-nav-bar .desing-nav-1 {
+  position: relative;
+  top: 263px;
+  right: 38px;
+  box-shadow: 10px 10px 100px 0px rgba(175, 227, 196, 0.48);
+  border-radius: 45px;
+}
+body.Stock-information main aside div.aside-nav-bar .select-item {
+  position: relative;
+  top: 263px;
+  right: 53px;
+  box-shadow: 10px 10px 100px 0px rgba(175, 227, 196, 0.48);
+  border-radius: 45px;
+}
+body.Stock-information main .content .main-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body.Stock-information main .content .main-row > .col-md-3 {
+  width: 21%;
+}
+body.Stock-information main .content .main-row > .col-md-3 .item-main {
+  width: 165px;
+  height: 97px;
+  margin-top: 145px;
+  margin-right: 69px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 2.5px solid #296F45;
+}
+body.Stock-information main .content .main-row > .col-md-3 .item-main::after {
+  content: "";
+  width: 147px;
+  height: 97px;
+  display: block;
+  position: relative;
+  z-index: -1;
+  margin-right: 69px;
+  border-radius: 20px;
+  background: rgba(179, 239, 203, 0.35);
+  top: -158px;
+  left: 85px;
+}
+body.Stock-information main .content .main-row > .col-md-3 .item-main h4 {
+  color: rgba(29, 29, 30, 0.92);
+  text-align: right;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+body.Stock-information main .content .main-row > .col-md-3 .item-main > p:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.65);
+  text-align: right;
+  font-size: 18px;
+  position: relative;
+  top: 5px;
+  right: 10px;
+}
+body.Stock-information main .content .main-row > .col-md-3 .item-main > p:nth-of-type(2) {
+  color: #38AF3C;
+  text-align: right;
+  position: relative;
+  font-size: 18px;
+  top: -13px;
+  right: 10px;
+}
+body.Stock-information main .content .main-row > .col-md-3 .item-main svg {
+  position: relative;
+  position: relative;
+  top: -112px;
+  right: 133px;
+}
+body.Stock-information main .content .main-row > .col-md-3 .RED-style {
+  border: 2.5px solid #CB0808;
+}
+body.Stock-information main .content .main-row > .col-md-3 .RED-style::after {
+  border-radius: 20px;
+  background: rgba(239, 179, 190, 0.35);
+}
+body.Stock-information main .content .main-row > .col-md-3 .RED-style > p:nth-of-type(2) {
+  color: #EE1D1D;
+}
+body.Stock-information main .content .main-row > .col-md-3 .RED-style svg {
+  transform: rotate(180deg);
+}
+body.Stock-information main .content .main-row > .col-md-3 .RED-style svg path {
+  fill: #EE1D1D;
+}
+body.Stock-information main .content .main-row > .col-md-3 .RED-style + svg path {
+  fill: #EE1D1D;
+}
+body.Stock-information main .content .main-row > .col-md-3 svg {
+  position: relative;
+  right: 233px;
+  top: -20px;
+}
+body.Stock-information main .Stocks {
+  margin: 42px;
+}
+body.Stock-information main .Stocks .Lino-perfor {
+  background: #F4F8F1;
+  border-radius: 2px;
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance .title-table {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance .title-table div.button {
+  color: #282927;
+  text-align: center;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  line-height: normal;
+  padding: 2px 5px 3px 5px;
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 1px solid rgba(175, 227, 196, 0.48);
+  background: #DDF8DD;
+  border: none;
+  margin-left: 41px;
+  width: 23%;
+}
+@media (min-width: 1350px) and (max-width: 1740px) {
+  body.Stock-information main .Stocks .Lino-perfor .right-performance .title-table div.button {
+    width: 22%;
+  }
+}
+@media (max-width: 1349px) {
+  body.Stock-information main .Stocks .Lino-perfor .right-performance .title-table div.button {
+    width: 19%;
+    margin-right: 17px;
+    margin-left: 42px;
+  }
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance .title-table div.buttonnn {
+  width: 30%;
+  margin-left: 21px;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table, body.Stock-information main .Stocks .Lino-perfor .right-performance thead, body.Stock-information main .Stocks .Lino-perfor .right-performance tbody, body.Stock-information main .Stocks .Lino-perfor .right-performance th, body.Stock-information main .Stocks .Lino-perfor .right-performance td {
+  display: block;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance tr {
+  display: flex;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table {
+  width: 100%;
+  text-align: center;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table thead tr {
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 1.8px solid #E5F6EB;
+  background: #FBFFFD;
+  align-items: center;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table thead tr th {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table thead tr th:first-of-type {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding-bottom: 5px;
+  width: 10%;
+  padding-top: 10px;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table thead tr th:first-of-type svg {
+  margin-right: 5px;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table thead tr th:nth-child(2) {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 21%;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table thead tr th:nth-child(3) {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 21%;
+  margin-left: 10px;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table thead tr th.thh {
+  width: 8%;
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 17px;
+  padding: 0 9px 0 9px;
+  border-right: solid 2px #F3FFF9;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table tbody {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: white;
+  width: 101.4%;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table tbody tr {
+  border-bottom: 1.8px solid #E5F6EB;
+  align-items: center;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table tbody tr td {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table tbody tr td:first-of-type {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding-bottom: 5px;
+  width: 10%;
+  padding-top: 10px;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table tbody tr td:nth-child(2) {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 21%;
+}
+body.Stock-information main .Stocks .Lino-perfor .right-performance table tbody tr td:nth-child(3) {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 21%;
+  margin-left: 10px;
+}
+body.Stock-information main .Beta-by-industry {
+  margin: 90px 42px 190px 42px;
+}
+body.Stock-information main .Beta-by-industry .button-stock button#tab-1 {
+  border-radius: 0px 20px 0px 0px;
+}
+body.Stock-information main .Beta-by-industry .button-stock button#tab-2 {
+  border-radius: 20px 0px 0px 0px;
+  margin-right: -5px;
+  opacity: 0.5;
+}
+body.Stock-information main .Beta-by-industry .by-industry {
+  background: #F4F8F1;
+  border-radius: 2px;
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table, body.Stock-information main .Beta-by-industry .by-industry .right-performance thead, body.Stock-information main .Beta-by-industry .by-industry .right-performance tbody, body.Stock-information main .Beta-by-industry .by-industry .right-performance th, body.Stock-information main .Beta-by-industry .by-industry .right-performance td {
+  display: block;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance tr {
+  display: flex;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table thead tr {
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 1.8px solid #E5F6EB;
+  background: #FBFFFD;
+  align-items: center;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table thead tr th {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  width: 20%;
+  padding: 10px 5px 10px 5px;
+  word-break: break-all;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table thead tr th button {
+  border: none;
+  background: #FBFFFD;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table thead tr th button svg {
+  margin-right: 5px;
+  cursor: pointer;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table thead tr th form#searchbox_1 {
+  position: relative;
+  margin-right: 53%;
+  margin-top: -30px;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table thead tr th form#searchbox_1 input[type=search] {
+  border-radius: 6px;
+  border: 1px solid darkseagreen;
+  padding-right: 6px;
+  width: 155%;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table thead tr th form#searchbox_1 button {
+  display: none;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table tbody {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: white;
+  width: 101.4%;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table tbody tr {
+  border-bottom: 1.8px solid #E5F6EB;
+  align-items: center;
+  justify-content: space-around;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table tbody tr td {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding: 8px 0px 8px 24px;
+  width: 20%;
+  word-break: break-all;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table tbody tr td.tdd-green {
+  width: 20%;
+  border-right: none;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table tbody tr td.tdd-red {
+  width: 20%;
+  border-right: none;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table#table-2 {
+  width: 80%;
+  position: relative;
+  margin-top: -250px;
+  z-index: -1;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table#table-2 thead tr {
+  justify-content: space-around;
+}
+body.Stock-information main .Beta-by-industry .by-industry .right-performance table#table-2 tbody {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+body.Percentages div.row-header {
+  display: flex;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  margin: 0px auto 10px auto;
+  align-items: center;
+  position: fixed;
+  left: 3px;
+  padding-top: 15px;
+  z-index: 4;
+}
+body.Percentages div.row-header .calendar-header {
+  height: 65px;
+}
+body.Percentages div.row-header .calender-item {
+  position: relative;
+  top: 13px;
+  left: 78px;
+}
+body.Percentages div.row-header .calender-item-1 {
+  display: inline;
+  position: relative;
+  top: -18px;
+  font-size: 10px;
+  right: -85px;
+}
+body.Percentages div.row-header .calender-item-2 {
+  display: inline;
+  position: relative;
+  top: 12px;
+  font-size: 14px;
+  right: -106px;
+}
+body.Percentages div.row-header .calender-item-3 {
+  display: inline;
+  position: relative;
+  top: -48px;
+  font-size: 15px;
+  right: 12px;
+}
+body.Percentages div.row-header .name-website {
+  color: #4B4B50;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body.Percentages div.row-header .name-website h1 {
+  font-family: unset !important;
+}
+body.Percentages div.row-header .timer {
+  text-align: left;
+}
+body.Percentages div.row-header .timer-item {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  right: -60px;
+}
+body.Percentages main aside {
+  margin-right: -13px;
+}
+body.Percentages main aside div.aside-nav-bar {
+  width: 85px;
+  height: 611px;
+  margin-top: 82px;
+  border-radius: 120px 0px 0px 120px;
+  background: #4B4B50;
+}
+body.Percentages main aside div.aside-nav-bar::after {
+  content: " ";
+  display: block;
+  margin-left: 90px;
+  margin-top: -31px;
+  box-shadow: 10px 10px 100px 43px rgba(175, 227, 196, 0.48);
+}
+body.Percentages main aside div.aside-nav-bar::before {
+  content: " ";
+  position: relative;
+  display: block;
+  top: 563px;
+  left: 57px;
+  box-shadow: 10px 10px 100px 45px rgba(175, 227, 196, 0.48);
+}
+body.Percentages main aside div.aside-nav-bar .menu-items {
+  display: flex;
+  flex-direction: column;
+  top: 152px;
+  position: absolute;
+  align-items: center;
+  width: 117px;
+}
+body.Percentages main aside div.aside-nav-bar .menu-item {
+  width: 100%;
+  padding: 0px 10px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 55px;
+}
+body.Percentages main aside div.aside-nav-bar .font-side > a {
+  font-size: 12px;
+}
+body.Percentages main aside div.aside-nav-bar .active {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 204px;
+  background-color: #4B4B50;
+  color: #0CFF6D;
+  right: 63px;
+  border-radius: 100%;
+  z-index: 1;
+  padding-top: 15px;
+  text-align: center;
+}
+body.Percentages main aside div.aside-nav-bar .active svg {
+  margin-top: -3px;
+}
+body.Percentages main aside div.aside-nav-bar .active svg path {
+  fill: #0CFF6D;
+}
+body.Percentages main aside div.aside-nav-bar .active p {
+  display: none;
+}
+body.Percentages main aside div.aside-nav-bar .desing-nav-1 {
+  position: relative;
+  top: 263px;
+  right: 38px;
+  box-shadow: 10px 10px 100px 0px rgba(175, 227, 196, 0.48);
+  border-radius: 45px;
+}
+body.Percentages main aside div.aside-nav-bar .select-item {
+  position: relative;
+  top: 263px;
+  right: 53px;
+  box-shadow: 10px 10px 100px 0px rgba(175, 227, 196, 0.48);
+  border-radius: 45px;
+}
+body.Percentages main .content .main-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body.Percentages main .content .main-row > .col-md-3 {
+  width: 21%;
+}
+body.Percentages main .content .main-row > .col-md-3 .item-main {
+  width: 165px;
+  height: 97px;
+  margin-top: 145px;
+  margin-right: 69px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 2.5px solid #296F45;
+}
+body.Percentages main .content .main-row > .col-md-3 .item-main::after {
+  content: "";
+  width: 147px;
+  height: 97px;
+  display: block;
+  position: relative;
+  z-index: -1;
+  margin-right: 69px;
+  border-radius: 20px;
+  background: rgba(179, 239, 203, 0.35);
+  top: -158px;
+  left: 85px;
+}
+body.Percentages main .content .main-row > .col-md-3 .item-main h4 {
+  color: rgba(29, 29, 30, 0.92);
+  text-align: right;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+body.Percentages main .content .main-row > .col-md-3 .item-main > p:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.65);
+  text-align: right;
+  font-size: 18px;
+  position: relative;
+  top: 5px;
+  right: 10px;
+}
+body.Percentages main .content .main-row > .col-md-3 .item-main > p:nth-of-type(2) {
+  color: #38AF3C;
+  text-align: right;
+  position: relative;
+  font-size: 18px;
+  top: -13px;
+  right: 10px;
+}
+body.Percentages main .content .main-row > .col-md-3 .item-main svg {
+  position: relative;
+  position: relative;
+  top: -112px;
+  right: 133px;
+}
+body.Percentages main .content .main-row > .col-md-3 .RED-style {
+  border: 2.5px solid #CB0808;
+}
+body.Percentages main .content .main-row > .col-md-3 .RED-style::after {
+  border-radius: 20px;
+  background: rgba(239, 179, 190, 0.35);
+}
+body.Percentages main .content .main-row > .col-md-3 .RED-style > p:nth-of-type(2) {
+  color: #EE1D1D;
+}
+body.Percentages main .content .main-row > .col-md-3 .RED-style svg {
+  transform: rotate(180deg);
+}
+body.Percentages main .content .main-row > .col-md-3 .RED-style svg path {
+  fill: #EE1D1D;
+}
+body.Percentages main .content .main-row > .col-md-3 .RED-style + svg path {
+  fill: #EE1D1D;
+}
+body.Percentages main .content .main-row > .col-md-3 svg {
+  position: relative;
+  right: 233px;
+  top: -20px;
+}
+body.Percentages main .Performance-of-percentages {
+  margin: 50px 42px 80px 42px;
+}
+body.Percentages main .Performance-of-percentages .button-stock button {
+  border-radius: 20px 20px 0px 0px;
+}
+body.Percentages main .Performance-of-percentages .of-percentages {
+  background: #F4F8F1;
+  border-radius: 2px;
+  padding: 30px 20px 30px 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table, body.Percentages main .Performance-of-percentages .of-percentages .right-performance thead, body.Percentages main .Performance-of-percentages .of-percentages .right-performance tbody, body.Percentages main .Performance-of-percentages .of-percentages .right-performance th, body.Percentages main .Performance-of-percentages .of-percentages .right-performance td {
+  display: block;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance tr {
+  display: flex;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table thead tr {
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 1.8px solid #E5F6EB;
+  background: #FBFFFD;
+  align-items: center;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table thead tr th {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  width: 17%;
+  padding: 10px 0px 10px 0px;
+  word-break: keep-all;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table thead tr th button {
+  border: none;
+  background: #FBFFFD;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table thead tr th button svg {
+  margin-right: 5px;
+  cursor: pointer;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table thead tr th form#searchbox_1 {
+  position: relative;
+  margin-right: 60%;
+  margin-top: -26px;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table thead tr th form#searchbox_1 input[type=search] {
+  border-radius: 6px;
+  border: 1px solid darkseagreen;
+  padding-right: 6px;
+  width: 150%;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table thead tr th form#searchbox_1 button {
+  display: none;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table tbody {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: white;
+  width: 101.4%;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table tbody tr {
+  border-bottom: 1.8px solid #E5F6EB;
+  align-items: center;
+  justify-content: space-around;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table tbody tr td {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 15px;
+  padding: 8px 0px 8px 24px;
+  width: 20%;
+  word-break: break-all;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table tbody tr td.tdd-green {
+  width: 20%;
+  border-right: none;
+}
+body.Percentages main .Performance-of-percentages .of-percentages .right-performance table tbody tr td.tdd-red {
+  width: 20%;
+  border-right: none;
+}
+body.Percentages main .Smart-and-knowledgeable {
+  margin: 50px 42px 190px 42px;
+}
+body.Percentages main .Smart-and-knowledgeable .and-knowledgeable button {
+  padding: 2px 20px 4px 35px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and {
+  background: #F4F8F1;
+  border-radius: 2px;
+  padding: 30px 20px 30px 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .title-table p {
+  color: #282927;
+  text-align: right;
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  padding-right: 5px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .title-table p svg:last-of-type {
+  position: relative;
+  right: -56px;
+  margin-left: -45px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .title-table p span {
+  border-radius: 20px;
+  background: rgba(218, 255, 211, 0.52);
+  padding: 3px 8px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table, body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance thead, body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance tbody, body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance th, body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance td {
+  display: block;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance tr {
+  display: flex;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table {
+  width: 90%;
+  text-align: center;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table thead tr {
+  border-radius: 20px 20px 0px 0px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table thead tr th {
+  border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+  background: #B2EEEA;
+  color: #ffffff;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding: 5px;
+  width: 50%;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table thead tr th:nth-child(1) {
+  border-radius: 0px 20px 0px 0px;
+  background: rgba(87, 94, 86, 0.72);
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table thead tr th:nth-child(2) {
+  background: rgba(83, 58, 236, 0.37);
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table thead tr th:nth-child(3) {
+  background: rgba(59, 201, 210, 0.69);
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table thead tr th:last-child {
+  border-radius: 20px 0px 0px 0px;
+  background: rgba(54, 225, 51, 0.68);
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table tbody {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: white;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance table tbody tr td {
+  border-bottom: 1px solid rgba(179, 239, 203, 0.35);
+  background: #ffffff;
+  color: #000000;
+  font-family: "B_Koodak_Bold";
+  font-size: 15px;
+  padding: 5px;
+  width: 50%;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-xl {
+  --bs-modal-width: 1250px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-content {
+  background: #F8FFFC;
+  border-radius: 20px;
+  border: none;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-header {
+  flex-direction: column;
+  background: #4B4B50;
+  border-radius: 20px 20px 0 0;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-header .modal-title {
+  color: #0CFF6D;
+  text-align: center;
+  font-size: 23px;
+  line-height: normal;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-header .header-prec-title {
+  margin-top: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-header .header-prec-title .heder-prec-item {
+  color: white;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body {
+  margin: 15px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table .head-table {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table .head-table div.button {
+  color: #282927;
+  text-align: center;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  line-height: normal;
+  padding: 2px 5px 3px 5px;
+  border-radius: 20px 20px 0px 0px;
+  border-right: 1px solid rgba(175, 227, 196, 0.48);
+  border-bottom: 1px solid rgba(175, 227, 196, 0.48);
+  border-left: 1px solid rgba(175, 227, 196, 0.48);
+  background: #E4ECE4;
+  margin-left: 0px;
+  width: 17.5%;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table .head-table div.buttonnn {
+  width: 30%;
+  margin-left: 0px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table, body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table thead, body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table tbody, body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table th, body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table td {
+  display: block;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table tr {
+  display: flex;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table {
+  width: 100%;
+  text-align: center;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table thead tr {
+  border-radius: 0px 20px 0px 0px;
+  border-bottom: 1.8px solid #E5F6EB;
+  background: #ffffff;
+  align-items: center;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table thead tr th {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 18px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  border: none;
+  font-size: 16px;
+  padding-top: 10px;
+  width: 10%;
+  background-color: #fff;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table thead tr th:first-of-type svg {
+  margin-right: 5px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table thead tr th:nth-child(3) {
+  margin-left: 10px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table thead tr th.thh {
+  width: 6%;
+  font-family: "B_Koodak_Bold";
+  font-size: 15px;
+  border-right: solid 2px #F3FFF9;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: white;
+  width: 101.4%;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody tr {
+  border-bottom: 1.8px solid #E5F6EB;
+  align-items: center;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody tr td {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody tr td:first-of-type {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  padding-bottom: 8px;
+  width: 10.1%;
+  padding-top: 10px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody tr td:nth-child(2) {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  padding: 10px 0px 8px 5px;
+  width: 10.1%;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody tr td:nth-child(3) {
+  color: #000;
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  padding: 10px 0px 8px 5px;
+  width: 10.1%;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody tr td.tdd-green {
+  padding: 8px 5px 9px 5px;
+  width: 5.9%;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table tbody tr td.tdd-red {
+  padding: 8px 5px 9px 5px;
+  width: 5.9%;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance {
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.77);
+  width: 65%;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(1) span {
+  color: #9268D6;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(2) {
+  font-size: 16px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(2) span {
+  color: #9268D6;
+  margin-left: 2px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(2) svg {
+  margin: 0 17px 0 8px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(3) {
+  font-size: 16px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(3) span {
+  color: #0FB8C2;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(3) svg {
+  margin: 0 7px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(4) {
+  font-size: 16px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(4) span {
+  color: #34D026;
+  margin-left: 0px;
+}
+body.Percentages main .Smart-and-knowledgeable .Smart-and .left-performance .box-guidance p:nth-child(4) svg {
+  margin: 0 5px;
+}
+
+body.login {
+  background-color: rgb(240, 255, 237);
+}
+body.login div.row-header {
+  display: flex;
+  width: 100%;
+  margin: 0px auto 10px auto;
+  align-items: center;
+  position: fixed;
+  left: 3px;
+  padding-top: 15px;
+  z-index: 4;
+}
+body.login div.row-header .calendar-header {
+  height: 65px;
+}
+body.login div.row-header .calender-item {
+  position: relative;
+  top: 13px;
+  left: 78px;
+}
+body.login div.row-header .calender-item-1 {
+  display: inline;
+  position: relative;
+  top: -18px;
+  font-size: 10px;
+  right: -85px;
+}
+body.login div.row-header .calender-item-2 {
+  display: inline;
+  position: relative;
+  top: 12px;
+  font-size: 14px;
+  right: -106px;
+}
+body.login div.row-header .calender-item-3 {
+  display: inline;
+  position: relative;
+  top: -48px;
+  font-size: 15px;
+  right: 12px;
+}
+body.login div.row-header .name-website {
+  color: #4B4B50;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body.login div.row-header .name-website h1 {
+  font-family: unset !important;
+}
+body.login div.row-header .timer {
+  text-align: left;
+}
+body.login div.row-header .timer-item {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  right: -60px;
+}
+body.login ::-moz-placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+body.login ::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+body.login :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(255, 255, 255);
+}
+body.login ::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(255, 255, 255);
+}
+body.login .box_login {
+  margin: 6% auto;
+  width: 500px;
+  margin-top: 185px;
+  height: 520px;
+  border-radius: 30px;
+  border: 3px solid #FFF;
+  background: linear-gradient(139deg, rgb(134, 165, 123) -10%, rgba(108, 152, 144, 0.46) 34.9%, rgba(62, 106, 124, 0.55) 67.19%, rgba(20, 27, 18, 0.7) 100%);
+}
+body.login .box_login .svg_1 {
+  position: relative;
+  right: 38%;
+  top: -57px;
+}
+body.login .svg_2 {
+  position: relative;
+  z-index: 1;
+  right: 17.2%;
+  top: -60px;
+}
+
+.form_login form {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.form_login form label:nth-child(1) {
+  background: rgba(217, 217, 217, 0.47);
+  border-radius: 0px 20px 20px 0px;
+  width: 60px;
+  height: 60px;
+  padding: 15px 16px;
+}
+.form_login form input[type=tel] {
+  font-family: "B_Koodak_Bold";
+  color: #FFF;
+  font-size: 18px;
+  margin-bottom: 36px;
+  padding: 16.5px 12px;
+  width: 82%;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+  background: rgba(255, 255, 255, 0.28);
+}
+.form_login form input[type=password] {
+  font-family: "B_Koodak_Bold";
+  color: #FFF;
+  font-size: 18px;
+  padding: 16px 12px;
+  width: 82%;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+  background: rgba(255, 255, 255, 0.28);
+}
+.form_login form input[type=button] {
+  margin-bottom: 36px;
+  padding: 5px 0px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.82);
+  color: #21301F;
+  font-family: "B_Koodak_Bold";
+  border: none;
+  font-size: 32px;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+.form_login form input[type=button]:hover {
+  transition: all 0.3s ease-out;
+  background: rgba(255, 255, 255, 0.3);
+}
+.form_login form label:nth-child(4) {
+  background: rgba(217, 217, 217, 0.47);
+  border-radius: 0px 20px 20px 0px;
+  width: 60px;
+  height: 60px;
+  padding: 9px 13px;
+}
+.form_login form p {
+  margin: 11px auto 40px auto;
+}
+.form_login form p a {
+  font-size: 16px;
+  color: var(--1, #E0EEFF);
+}
+
+body.account div.row-header {
+  display: flex;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  margin: 0px auto 10px auto;
+  align-items: center;
+  position: fixed;
+  left: 3px;
+  padding-top: 15px;
+  z-index: 4;
+}
+body.account div.row-header .calendar-header {
+  height: 65px;
+}
+body.account div.row-header .calender-item {
+  position: relative;
+  top: 13px;
+  left: 78px;
+}
+body.account div.row-header .calender-item-1 {
+  display: inline;
+  position: relative;
+  top: -18px;
+  font-size: 10px;
+  right: -85px;
+}
+body.account div.row-header .calender-item-2 {
+  display: inline;
+  position: relative;
+  top: 12px;
+  font-size: 14px;
+  right: -106px;
+}
+body.account div.row-header .calender-item-3 {
+  display: inline;
+  position: relative;
+  top: -48px;
+  font-size: 15px;
+  right: 12px;
+}
+body.account div.row-header .name-website {
+  color: #4B4B50;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body.account div.row-header .name-website h1 {
+  font-family: unset !important;
+}
+body.account div.row-header .timer {
+  text-align: left;
+}
+body.account div.row-header .timer-item {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  right: -60px;
+}
+body.account main aside {
+  margin-right: -13px;
+}
+body.account main aside div.aside-nav-bar {
+  width: 85px;
+  height: 611px;
+  margin-top: 82px;
+  border-radius: 120px 0px 0px 120px;
+  background: #4B4B50;
+}
+body.account main aside div.aside-nav-bar::after {
+  content: " ";
+  display: block;
+  margin-left: 90px;
+  margin-top: -31px;
+  box-shadow: 10px 10px 100px 43px rgba(175, 227, 196, 0.48);
+}
+body.account main aside div.aside-nav-bar::before {
+  content: " ";
+  position: relative;
+  display: block;
+  top: 563px;
+  left: 57px;
+  box-shadow: 10px 10px 100px 45px rgba(175, 227, 196, 0.48);
+}
+body.account main aside div.aside-nav-bar .menu-items {
+  display: flex;
+  flex-direction: column;
+  top: 152px;
+  position: absolute;
+  align-items: center;
+  width: 117px;
+}
+body.account main aside div.aside-nav-bar .menu-item {
+  width: 100%;
+  padding: 0px 10px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 55px;
+}
+body.account main aside div.aside-nav-bar .font-side > a {
+  font-size: 12px;
+}
+body.account main aside div.aside-nav-bar .active {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 204px;
+  background-color: #4B4B50;
+  color: #0CFF6D;
+  right: 63px;
+  border-radius: 100%;
+  z-index: 1;
+  padding-top: 15px;
+  text-align: center;
+}
+body.account main aside div.aside-nav-bar .active svg {
+  margin-top: -3px;
+}
+body.account main aside div.aside-nav-bar .active svg path {
+  fill: #0CFF6D;
+}
+body.account main aside div.aside-nav-bar .active p {
+  display: none;
+}
+body.account main aside div.aside-nav-bar .desing-nav-1 {
+  position: relative;
+  top: 263px;
+  right: 38px;
+  box-shadow: 10px 10px 100px 0px rgba(175, 227, 196, 0.48);
+  border-radius: 45px;
+}
+body.account main aside div.aside-nav-bar .select-item {
+  position: relative;
+  top: 263px;
+  right: 53px;
+  box-shadow: 10px 10px 100px 0px rgba(175, 227, 196, 0.48);
+  border-radius: 45px;
+}
+body.account main .content .main-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body.account main .content .main-row > .col-md-3 {
+  width: 21%;
+}
+body.account main .content .main-row > .col-md-3 .item-main {
+  width: 165px;
+  height: 97px;
+  margin-top: 145px;
+  margin-right: 69px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 2.5px solid #296F45;
+}
+body.account main .content .main-row > .col-md-3 .item-main::after {
+  content: "";
+  width: 147px;
+  height: 97px;
+  display: block;
+  position: relative;
+  z-index: -1;
+  margin-right: 69px;
+  border-radius: 20px;
+  background: rgba(179, 239, 203, 0.35);
+  top: -158px;
+  left: 85px;
+}
+body.account main .content .main-row > .col-md-3 .item-main h4 {
+  color: rgba(29, 29, 30, 0.92);
+  text-align: right;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+body.account main .content .main-row > .col-md-3 .item-main > p:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.65);
+  text-align: right;
+  font-size: 18px;
+  position: relative;
+  top: 5px;
+  right: 10px;
+}
+body.account main .content .main-row > .col-md-3 .item-main > p:nth-of-type(2) {
+  color: #38AF3C;
+  text-align: right;
+  position: relative;
+  font-size: 18px;
+  top: -13px;
+  right: 10px;
+}
+body.account main .content .main-row > .col-md-3 .item-main svg {
+  position: relative;
+  position: relative;
+  top: -112px;
+  right: 133px;
+}
+body.account main .content .main-row > .col-md-3 .RED-style {
+  border: 2.5px solid #CB0808;
+}
+body.account main .content .main-row > .col-md-3 .RED-style::after {
+  border-radius: 20px;
+  background: rgba(239, 179, 190, 0.35);
+}
+body.account main .content .main-row > .col-md-3 .RED-style > p:nth-of-type(2) {
+  color: #EE1D1D;
+}
+body.account main .content .main-row > .col-md-3 .RED-style svg {
+  transform: rotate(180deg);
+}
+body.account main .content .main-row > .col-md-3 .RED-style svg path {
+  fill: #EE1D1D;
+}
+body.account main .content .main-row > .col-md-3 .RED-style + svg path {
+  fill: #EE1D1D;
+}
+body.account main .content .main-row > .col-md-3 svg {
+  position: relative;
+  right: 233px;
+  top: -20px;
+}
+body.account main .info_account {
+  margin-top: 50px;
+  margin-right: 50px;
+  display: flex;
+}
+body.account main .info_account .box_1 .info_user {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  margin-right: -25%;
+}
+body.account main .info_account .box_1 .info_user .avatar > svg:first-child {
+  position: relative;
+  z-index: 1;
+}
+body.account main .info_account .box_1 .info_user .avatar > svg:last-child {
+  position: relative;
+  left: 72px;
+}
+body.account main .info_account .box_1 .info_user .name_user {
+  margin-right: -55px;
+}
+body.account main .info_account .box_1 .info_user .name_user h3 {
+  color: #434345;
+  font-size: 20px;
+  line-height: normal;
+}
+body.account main .info_account .box_1 .info_user .name_user p {
+  color: #434345;
+  font-size: 16px;
+  line-height: normal;
+}
+body.account main .info_account .box_1 .history_transactions {
+  padding-bottom: 30px;
+}
+body.account main .info_account .box_1 .history_transactions > svg:first-child {
+  position: relative;
+  right: 50px;
+}
+body.account main .info_account .box_1 .history_transactions > svg:nth-child(2) {
+  position: absolute;
+  z-index: 1;
+  margin: 35px -110px 0px 0px;
+}
+body.account main .info_account .box_1 .history_transactions > svg:last-child {
+  position: absolute;
+  margin-right: -90px;
+  margin-top: -10px;
+}
+body.account main .info_account .box_1 .history_info {
+  position: absolute;
+  margin: -180px 120px 0px 0px;
+}
+body.account main .info_account .box_1 .history_info h5 {
+  color: #FAFFFA;
+  font-size: 17px;
+  line-height: normal;
+}
+body.account main .info_account .box_1 .history_info p {
+  color: #BBBCBC;
+  font-size: 11px;
+  line-height: normal;
+}
+body.account main .info_account .colume_2 .box_2 {
+  padding: 15px 40px 1px 0px;
+  margin-bottom: 20px;
+}
+body.account main .info_account .colume_2 .box_2 .subscription_type h3 {
+  color: #343434;
+  text-align: right;
+  font-size: 32px;
+  line-height: normal;
+  margin: 0px;
+}
+body.account main .info_account .colume_2 .box_2 .subscription_type p {
+  color: #444;
+  text-align: right;
+  font-size: 24px;
+  line-height: normal;
+}
+body.account main .info_account .colume_2 .box_2 .subscription_type p span:first-child {
+  color: #444;
+  font-size: 32px;
+  line-height: normal;
+}
+body.account main .info_account .colume_2 .box_2 .subscription_type p span:last-child {
+  color: #1BDE51;
+  font-size: 32px;
+  line-height: normal;
+}
+body.account main .info_account .colume_2 .box_3 {
+  text-align: center;
+}
+body.account main .info_account .colume_2 .box_3 h3 {
+  color: #3D4342;
+  font-size: 36px;
+  font-family: inherit;
+  line-height: normal;
+  margin: 0 auto;
+  margin-bottom: -81px;
+  margin-top: 15px;
+  padding-top: 46px;
+  direction: ltr;
+}
+body.account main .info_account .colume_2 .box_3 .chart {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  height: 150px;
+}
+body.account main .info_account .colume_2 .box_3 .chart canvas {
+  position: relative;
+}
+body.account main .info_account .colume_2 .box_3 p {
+  color: #2B2C2C;
+  text-align: center;
+  font-family: "B_Koodak_Bold";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  top: -60px;
+}
+body.account main .info_account .colume_3 .box_4 {
+  padding: 15px 40px 1px 0px;
+  margin-bottom: 60px;
+}
+body.account main .info_account .colume_3 .box_4 > svg {
+  position: relative;
+  right: 90%;
+  top: -25px;
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type {
+  margin-top: -45px;
+  margin-bottom: 25px;
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type h3 {
+  color: #272727;
+  text-align: right;
+  font-size: 24px;
+  line-height: normal;
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type table, body.account main .info_account .colume_3 .box_4 .subscription_type tbody, body.account main .info_account .colume_3 .box_4 .subscription_type td {
+  display: block;
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type tr {
+  display: flex;
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type table {
+  width: 90%;
+  text-align: center;
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type table ::-webkit-scrollbar {
+  height: 5px; /* height of horizontal scrollbar ← You're missing this */
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type table ::-webkit-scrollbar-thumb {
+  background: rgb(155, 248, 182);
+  border-radius: 10px;
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type table tbody {
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type table tbody tr {
+  scrollbar-width: 5px;
+  border-radius: 10px;
+  align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+}
+body.account main .info_account .colume_3 .box_4 .subscription_type table tbody tr td {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #323337;
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  line-height: normal;
+  border: solid 1px #C3F1DB;
+  padding: 10px;
+  word-break: keep-all;
+}
+body.account main .info_account .colume_3 .box_5 {
+  padding: 15px 40px 1px 0px;
+}
+body.account main .info_account .colume_3 .box_5 > svg {
+  position: relative;
+  right: 90%;
+  top: -25px;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type {
+  margin-top: -45px;
+  margin-bottom: 25px;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type h3 {
+  color: #272727;
+  text-align: right;
+  font-size: 24px;
+  line-height: normal;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type table, body.account main .info_account .colume_3 .box_5 .subscription_type tbody, body.account main .info_account .colume_3 .box_5 .subscription_type td {
+  display: block;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type tr {
+  display: flex;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type table {
+  width: 90%;
+  text-align: center;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type table ::-webkit-scrollbar {
+  height: 5px; /* height of horizontal scrollbar ← You're missing this */
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type table ::-webkit-scrollbar-thumb {
+  background: rgb(155, 248, 182);
+  border-radius: 10px;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type table tbody {
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type table tbody tr {
+  scrollbar-width: 5px;
+  border-radius: 10px;
+  align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type table tbody tr td {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #323337;
+  font-family: "B_Koodak_Bold";
+  font-size: 16px;
+  line-height: normal;
+  border: solid 1px #C3F1DB;
+  padding: 10px;
+  word-break: keep-all;
+}
+body.account main .info_account .colume_3 .box_5 .subscription_type td.td-box5 {
+  font-size: 12px;
+  padding: 4px;
+}/*# sourceMappingURL=style.css.map */

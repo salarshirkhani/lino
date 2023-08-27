@@ -93,7 +93,7 @@ return [
 
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => env('DB_URI', 'mongodb+srv://root:sl7976190@cluster0.ahguj0z.mongodb.net/?retryWrites=true&w=majority'),
+            'dsn' => env('DB_URI', 'mongodb+srv://root:sl7976190@cluster0.ahguj0z.mongodb.net/'),
             'database' => 'lino',
        ],
 
