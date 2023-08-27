@@ -58,6 +58,8 @@
             <input type="password" required name="password_confirmation" id="password_confirmation" placeholder="تکرار رمز عبور">
             </div>
             <button type="submit" style="margin: 30px 0px;">ثبت نام</button>
+            <a href="{{route('login')}}" style="text-align: center; font-size:15px; margin: 120px;">قبلا ثبت نام کردید ؟ </a>
+           
         </form>
 
     </div>

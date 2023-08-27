@@ -41,6 +41,8 @@
             <input type="password" name="password" id="password" placeholder="ورود رمز عبور">
             </div>
             <button type="submit" style="margin: 30px 0px;">ورود </button>
+            <a href="{{route('register')}}" style="text-align: center; font-size:15px; margin: 115px;">اکانت کاربری ندارید ؟ </a>
+
         </form>
 
     </div>
