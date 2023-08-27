@@ -10,11 +10,7 @@
 }
 </style>
 <div class="box_login">
-<!-- Session Status -->
-<x-auth-session-status class="mb-4" :status="session('status')" />
 
-<!-- Validation Errors -->
-<x-auth-validation-errors class="mb-4" :errors="$errors" />
     <div class="logo_login">
         <svg class="svg_1" xmlns="http://www.w3.org/2000/svg" width="111" height="110" viewBox="0 0 111 110"
             fill="none">
