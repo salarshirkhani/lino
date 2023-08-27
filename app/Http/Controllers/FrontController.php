@@ -26,14 +26,6 @@ class FrontController extends Controller
         );
     }
 
-    public function profile()
-    {
-        $Darsadi_SudGir=DB::table('Darsadi_SudGir')->get();
-        return view('profile',[
-            'Darsadi_SudGir' => $Darsadi_SudGir,     
-        ]);
-    }
-
     public function welcome()
     {
         $Darsadi_SudGir=DB::table('Darsadi_SudGir')->get();
@@ -54,29 +46,6 @@ class FrontController extends Controller
         ]);
     }
 
-    public function Raftar_Darsadi_Tajmiei()
-    {
-        $support=DB::table('Raftar_Darsadi_Tajmiei')->get();
-        return view('raftardarsaditajmi',[
-            'support' => $support,     
-        ]);
-    }
-
-    public function Smart_Darsadi()
-    {
-        $support=DB::table('Smart_Darsadi')->get();
-        return  response()->json( [
-        'support' => $support,
-        ]);
-    }
-
-    public function Darsadi_SudGir()
-    {
-        $support=DB::table('Darsadi_SudGir')->get();
-        return  response()->json( [
-        'support' => $support,
-        ]);
-    }
 
 
 }
