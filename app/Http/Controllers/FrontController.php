@@ -46,6 +46,18 @@ class FrontController extends Controller
         ]);
     }
 
+    public function percentage()
+    {
+        $Raftar_Stock=DB::table('Raftar_Stock')->get();
+        $Smart_Darsadi=DB::table('Smart_Darsadi')->get();
+        $Raftar_Darsadi_Tajmiei=DB::table('Raftar_Darsadi_Tajmiei')->get();
+        return view('percentage',[
+            'Raftar_Stock' => $Raftar_Stock,
+            'Smart_Darsadi' => $Smart_Darsadi,
+            'Raftar_Darsadi_Tajmiei' => $Raftar_Darsadi_Tajmiei,
+        ]);
+    }
+
 
 
 }

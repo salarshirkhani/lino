@@ -38,8 +38,8 @@
                                 </a>
                             </li>
                             
-                            <li class="menu-item ">
-                                <a href="#">
+                            <li class="menu-item @if(Route::is('percentage')) active @endif">
+                                <a href="{{route('percentage')}}">
                                     <svg width="40" height="40" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_162_1626)">
                                         <rect width="55" height="55" rx="27.5" transform="matrix(1 0 0 -1 0 55.7812)" fill="#95959C" fill-opacity="0.44"/>
@@ -55,7 +55,7 @@
                                 </a>
                             </li>
                             <li class="menu-item font-side">
-                                <a href="#">
+                                <a href="#" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33"
                                         viewBox="0 0 33 33" fill="none">
                                         <path opacity="0.5"

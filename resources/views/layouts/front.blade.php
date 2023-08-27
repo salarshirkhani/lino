@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock-information</title>
+    <title>LEANO</title>
     <link rel="stylesheet" href="{{asset('content/bootstrap/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
@@ -28,10 +28,10 @@
                         <div class="calendar-header">
                             <img class="calender" src="{{asset('img/Vector.png')}}" alt="calender">
                             <img class="calender-item" src="{{asset('img/Ellipse 5.png')}}" alt="calender">
-                            <p class="calender-item-1">1401</p>
-                            <p class="calender-item-2">اسفند
+                            <p class="calender-item-1">{{ Facades\Verta::format('Y')}}</p>
+                            <p class="calender-item-2">{{ Facades\Verta::format('F')}}
                             <p>
-                            <p class="calender-item-3">25</p>
+                            <p class="calender-item-3">{{ Facades\Verta::format('d')}}</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -47,7 +47,7 @@
                                     d="M65 32.5C65 50.4493 50.4493 65 32.5 65C14.5507 65 0 50.4493 0 32.5C0 14.5507 14.5507 0 32.5 0C50.4493 0 65 14.5507 65 32.5ZM4.07513 32.5C4.07513 48.1986 16.8014 60.9249 32.5 60.9249C48.1986 60.9249 60.9249 48.1986 60.9249 32.5C60.9249 16.8014 48.1986 4.07513 32.5 4.07513C16.8014 4.07513 4.07513 16.8014 4.07513 32.5Z"
                                     fill="#92FFBD" />
                             </svg>
-                            <p class="timer-item">11:25</p>
+                            <p class="timer-item">{{ Facades\Verta::format('H:i')}}</p>
                         </div>
                     </div>
                 </div>
@@ -75,5 +75,7 @@
         </svg> 
     </footer>
 </body>
-
+<form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+    {{ csrf_field() }}
+</form>
 </html>
