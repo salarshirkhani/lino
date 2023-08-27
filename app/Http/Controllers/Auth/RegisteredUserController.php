@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\ValidationException;
 
 class RegisteredUserController extends Controller
 {
@@ -34,21 +36,19 @@ class RegisteredUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'tel' => ['required', 'regex:/^(09[0-9]{9})|(۰۹[۰-۹]{9})$/', 'unique:users'],
+            'mobile' => ['required', 'regex:/^(09[0-9]{9})|(۰۹[۰-۹]{9})$/', 'unique:users'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        $user = User::create([
-            'mobile' => $request->tel,
+        DB::table('users')->insert([
+            'mobile' => $request->mobile,
             'email' => $request->email,
             'name' => 'guest',
             'password' => Hash::make($request->password),
         ]);
+        $user = DB::table('users')->where('mobile' , $request->tel)->first();
 
-        event(new Registered($user));
-
-        Auth::login($user);
 
         return redirect(RouteServiceProvider::HOME);
     }

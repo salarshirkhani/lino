@@ -3,8 +3,8 @@
                 <div id="side">
                     <div class="aside-nav-bar">
                         <ul class="menu-items">
-                            <li class="menu-item @if(Request::is('profile')) active @endif">
-                                <a href="{{route('profile')}}">
+                            <li class="menu-item @if(Request::is('dashboard')) active @endif">
+                                <a href="{{route('dashboard')}}">
                                     <svg width="40" height="40" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g id="ic:round-person">
                                         <path id="Vector" d="M23 23.7813C27.1438 23.7813 30.5 20.425 30.5 16.2813C30.5 12.1375 27.1438 8.78125 23 8.78125C18.8563 8.78125 15.5 12.1375 15.5 16.2813C15.5 20.425 18.8563 23.7813 23 23.7813ZM23 27.5313C17.9938 27.5313 8 30.0438 8 35.0313V36.9063C8 37.9375 8.84375 38.7813 9.875 38.7813H36.125C37.1563 38.7813 38 37.9375 38 36.9063V35.0313C38 30.0438 28.0063 27.5313 23 27.5313Z" fill="#BBFFEF"/>

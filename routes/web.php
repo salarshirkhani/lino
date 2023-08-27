@@ -23,8 +23,7 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 //DATA MANAGMENT
-Route::get('raftarstock', 'FrontController@GetRaftarStock')->name('raftarstock');
-Route::get('raftardarsadi', 'FrontController@Raftar_Darsadi_Tajmiei')->name('raftardarsadi');
-Route::get('smartdarsadi', 'FrontController@Smart_Darsadi')->name('smartdarsadi');
-Route::get('darsadisudgir', 'FrontController@Darsadi_SudGir')->name('darsadisudgir');
-Route::get('profile', 'FrontController@profile')->name('profile');
+Route::get('raftarstock', 'FrontController@GetRaftarStock')->middleware(['auth'])->name('raftarstock');
+Route::get('raftardarsadi', 'FrontController@Raftar_Darsadi_Tajmiei')->middleware(['auth'])->name('raftardarsadi');
+Route::get('smartdarsadi', 'FrontController@Smart_Darsadi')->middleware(['auth'])->name('smartdarsadi');
+Route::get('darsadisudgir', 'FrontController@Darsadi_SudGir')->middleware(['auth'])->name('darsadisudgir');

@@ -17,7 +17,7 @@
     
 </head>
 
-@include('components.bodyhead')
+ @include('components.bodyhead')
 
     <!-- start header dashbord -->
     <header>
