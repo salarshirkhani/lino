@@ -1221,7 +1221,7 @@ body.login {
     form {
         margin: 0 auto;
         width: 70%;
-        display: flex;
+        display: block;
         flex-direction: row;
         align-items: stretch;
         flex-wrap: wrap;
@@ -1244,6 +1244,18 @@ body.login {
             background: rgba(255, 255, 255, 0.28);
            
         }
+        input{
+            font-family: "B_Koodak_Bold";
+            color: #FFF;
+            font-size: 18px;
+            margin-bottom: 36px;
+            padding: 16.5px 12px;
+            width: 82%;
+            border: none;
+            border-radius: 20px 0px 0px 20px;
+            background: rgba(255, 255, 255, 0.28);
+           
+        }
         input[type="password"] {
             font-family: "B_Koodak_Bold";
             color: #FFF;
@@ -1254,7 +1266,7 @@ body.login {
             border-radius: 20px 0px 0px 20px;
             background: rgba(255, 255, 255, 0.28);
         }
-        input[type="button"] {
+        button {
             margin-bottom: 36px;
             padding: 5px 0px;
             border-radius: 20px;
@@ -1270,7 +1282,7 @@ body.login {
                 background: rgba(255, 255, 255, 0.3);
             }
         }
-        label:nth-child(4) {
+        label {
             background: rgba(217, 217, 217, 0.47);
             border-radius: 0px 20px 20px 0px;
             width: 60px;

@@ -1720,7 +1720,7 @@ body.login .svg_2 {
 .form_login form {
   margin: 0 auto;
   width: 70%;
-  display: flex;
+  display: block;
   flex-direction: row;
   align-items: stretch;
   flex-wrap: wrap;
@@ -1743,6 +1743,17 @@ body.login .svg_2 {
   border-radius: 20px 0px 0px 20px;
   background: rgba(255, 255, 255, 0.28);
 }
+.form_login form input {
+  font-family: "B_Koodak_Bold";
+  color: #FFF;
+  font-size: 18px;
+  margin-bottom: 36px;
+  padding: 16.5px 12px;
+  width: 82%;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+  background: rgba(255, 255, 255, 0.28);
+}
 .form_login form input[type=password] {
   font-family: "B_Koodak_Bold";
   color: #FFF;
@@ -1753,7 +1764,7 @@ body.login .svg_2 {
   border-radius: 20px 0px 0px 20px;
   background: rgba(255, 255, 255, 0.28);
 }
-.form_login form input[type=button] {
+.form_login form button {
   margin-bottom: 36px;
   padding: 5px 0px;
   border-radius: 20px;
@@ -1765,11 +1776,11 @@ body.login .svg_2 {
   width: 100%;
   transition: all 0.3s ease-out;
 }
-.form_login form input[type=button]:hover {
+.form_login form button:hover {
   transition: all 0.3s ease-out;
   background: rgba(255, 255, 255, 0.3);
 }
-.form_login form label:nth-child(4) {
+.form_login form label {
   background: rgba(217, 217, 217, 0.47);
   border-radius: 0px 20px 20px 0px;
   width: 60px;
