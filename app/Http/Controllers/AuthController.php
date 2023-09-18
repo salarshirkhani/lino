@@ -43,7 +43,7 @@ class AuthController extends Controller
 
             return response()->json([
                 'status' => true,
-                'message' => 'User Created Successfully',
+                'message' => 'کاربر با موفقیت ساخته شد',
                 'token' => $user->createToken("API TOKEN")->plainTextToken
             ], 200);
 
@@ -80,7 +80,7 @@ class AuthController extends Controller
             if(!Auth::attempt($request->only(['email', 'password']))){
                 return response()->json([
                     'status' => false,
-                    'message' => 'Email & Password does not match with our record.',
+                    'message' => 'مشخصات وارد شده با اطلاعات ما سازگار نیست.',
                 ], 401);
             }
 
@@ -88,7 +88,7 @@ class AuthController extends Controller
 
             return response()->json([
                 'status' => true,
-                'message' => 'User Logged In Successfully',
+                'message' => 'با موفقیت وارد سایت شدید',
                 'token' => $user->createToken("API TOKEN")->plainTextToken
             ], 200);
 

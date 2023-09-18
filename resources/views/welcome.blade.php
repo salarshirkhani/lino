@@ -148,7 +148,7 @@
                             <div class="col-md-7">
                                 <div class="left-comparison">
                                     <!-- green style chart.js -->
-                                    <canvas id="myChart" style="width:100%;max-width:700px; height: 350px !important;"></canvas>
+                                    <canvas id="myChart" style="direction:ltr"></canvas>
                                 </div>
                             </div>
                         </div>

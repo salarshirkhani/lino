@@ -9,8 +9,8 @@
     padding: 9px 13px;
 }
 </style>
+
 <div class="box_login">
-    <x-auth-validation-errors class="mb-4" :errors="$errors" />
     <div class="logo_login">
         <svg class="svg_1" xmlns="http://www.w3.org/2000/svg" width="111" height="110" viewBox="0 0 111 110"
             fill="none">
@@ -23,6 +23,8 @@
         </svg>
     </div>
     <div class="form_login">
+        <x-auth-validation-errors class="alert alert-info" :errors="$errors" />
+
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <div style="display: flex;">

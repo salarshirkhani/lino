@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
@@ -11,11 +11,16 @@
     <script src="{{asset('js/sticky-kit-master/dist/sticky-kit.min.js')}}" defer></script>
 
     <Script src="{{asset('content/bootstrap/bootstrap.js')}}" defer></Script>
-    <script src="{{asset('node_modules/chart.js/dist/chart.umd.js')}}" defer></script>
+    <script src="{{asset('node_modules/chart.js/dist/chart.umd.js')}}" ></script>
     <script src="{{asset('js/main.js')}}" defer></script>
 
     
 </head>
+<style>
+.calender-item-3 {
+    top: -40px !important;
+}
+</style>
 
  @include('components.bodyhead')
 
@@ -23,7 +28,7 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="row-header">
+                <div class="row-header" style="@if(Route::is('login')) background: rgb(240, 255, 237 @endif)">
                     <div class="col-md-4">
                         <div class="calendar-header">
                             <img class="calender" src="{{asset('img/Vector.png')}}" alt="calender">

@@ -43,7 +43,7 @@
                                                     </svg>
                                                 </th>
                                                 <th> تعداد تجمعی درصدی ها</th>
-                                                <th> میانگین زمان حضور درصدی ها</th>
+                                                <th>(روز) میانگین زمان حضور درصدی ها</th>
                                                 <th class="thh">بعد از 15 روز </th>
                                                 <th class="thh"> بعد از 30 روز</th>
                                                 <th class="thh"> بعد از 60 روز </th>
@@ -56,14 +56,14 @@
                                            @foreach($Raftar_Stock as $item)
                                             <tr>
                                                 <td>{{$item['_id']}}</td>
-                                                <td> {{$item['AllTimeChangePrice']}} </td>
-                                                <td> {{$item['duration']}} روز </td>
-                                                <td class="tdd-green"> {{round($item['15daysChangePrice'],2)}} </td>
-                                                <td class="tdd-green"> {{round($item['30daysChangePrice'],2)}} </td>
-                                                <td class="tdd-green"> {{round($item['60daysChangePrice'],2)}}</td>
-                                                <td class="tdd-red"> {{round($item['15daysChangePrice_After'],2)}} </td>
-                                                <td class="tdd-red"> {{round($item['30daysChangePrice_After'],2)}} </td>
-                                                <td class="tdd-red"> {{round($item['60daysChangePrice_After'],2)}} </td>
+                                                <td> {{round($item['AllTimeChangePrice'],2)}} </td>
+                                                <td> {{round($item['duration'],0)}}  </td>
+                                                <td @if($item['15daysChangePrice'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['15daysChangePrice'],2)}} </td>
+                                                <td @if($item['30daysChangePrice'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['30daysChangePrice'],2)}} </td>
+                                                <td @if($item['60daysChangePrice'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['60daysChangePrice'],2)}}</td>
+                                                <td @if($item['15daysChangePrice_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['15daysChangePrice_After'],2)}} </td>
+                                                <td @if($item['30daysChangePrice_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['30daysChangePrice_After'],2)}} </td>
+                                                <td @if($item['60daysChangePrice_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['60daysChangePrice_After'],2)}} </td>
                                             </tr>
                                             @endforeach
                                         </tbody>
@@ -79,8 +79,8 @@
                 <div class="Beta-by-industry">
                     <div class="col-md-12">
                         <div class="button-stock">
-                            <button id="tab-1" onclick="button_table('tab-1')">  بتا به تفکیک نماد </button>
-                            <button id="tab-2" onclick="button_table('tab-2')">  بتا به تفکیک صنعت </button>
+                            <button id="tab-1" onclick="button_table('tab-1')">  سهام به تفکیک نماد </button>
+                            <button id="tab-2" onclick="button_table('tab-2')">  سهام به تفکیک صنعت </button>
                         </div>
                     </div>
                     <div class="col-md-12">

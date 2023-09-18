@@ -15,7 +15,7 @@
                 <div class="Performance-of-percentages">
                     <div class="col-md-12">
                         <div class="button-stock">
-                            <button> بتا به تفکیک نماد </button>
+                            <button> سهام به تفکیک نماد </button>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -83,11 +83,11 @@
                                         @foreach ($Raftar_Stock as $item)    
                                             <tr>
                                                 <td>{{$item['_id']}}</td>
-                                                <td> {{$item['AllTimeChangePrice']}}% </td>
-                                                <td class="tdd-green"> {{$item['AllTimeChangeMarket']}}% </td>
-                                                <td> {{$item['duration']}}</td>    
-                                                <td class="tdd-green"> {{$item['AllTimeChangePrice']}}% </td>
-                                                <td class="tdd-red"> {{$item['60daysChangePrice_After']}}% </td>
+                                                <td>{{round($item['AllTimeChangePrice'],2)}}% </td>
+                                                <td @if($item['AllTimeChangeMarket'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['AllTimeChangeMarket'],2)}}% </td>
+                                                <td> {{round($item['duration'],0)}}</td>    
+                                                <td @if($item['AllTimeChangePrice'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['AllTimeChangePrice'],2)}}% </td>
+                                                <td @if($item['60daysChangePrice_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['60daysChangePrice_After'],2)}}% </td>
                                             </tr>
                                         @endforeach
                                         </tbody>
@@ -140,16 +140,7 @@
                                             <!-- Modal Header -->
                                             <div class="modal-header">
                                             <h4 class="modal-title"> کارنامه درصدی ها 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="22" viewBox="0 0 33 22" fill="none">
-                                                    <g clip-path="url(#clip0_140_75)">
-                                                    <path d="M25.6667 1.22217H7.33333C6.8471 1.22217 6.38079 1.35094 6.03697 1.58015C5.69315 1.80936 5.5 2.12024 5.5 2.44439V19.5555C5.5 19.8797 5.69315 20.1905 6.03697 20.4197C6.38079 20.649 6.8471 20.7777 7.33333 20.7777H25.6667C26.1529 20.7777 26.6192 20.649 26.963 20.4197C27.3068 20.1905 27.5 19.8797 27.5 19.5555V2.44439C27.5 2.12024 27.3068 1.80936 26.963 1.58015C26.6192 1.35094 26.1529 1.22217 25.6667 1.22217ZM11.9167 15.8888H10.0833V14.6666H11.9167V15.8888ZM11.9167 13.4444H10.0833V12.2222H11.9167V13.4444ZM11.9167 10.9999H10.0833V9.77772H11.9167V10.9999ZM11.9167 8.5555H10.0833V7.33328H11.9167V8.5555ZM11.9167 6.11106H10.0833V4.88883H11.9167V6.11106ZM22.9167 15.8888H13.75V14.6666H22.9167V15.8888ZM22.9167 13.4444H13.75V12.2222H22.9167V13.4444ZM22.9167 10.9999H13.75V9.77772H22.9167V10.9999ZM22.9167 8.5555H13.75V7.33328H22.9167V8.5555ZM22.9167 6.11106H13.75V4.88883H22.9167V6.11106Z" fill="#66FFA3" fill-opacity="0.87"/>
-                                                    </g>
-                                                    <defs>
-                                                    <clipPath id="clip0_140_75">
-                                                    <rect width="33" height="22" fill="white"/>
-                                                    </clipPath>
-                                                    </defs>
-                                                </svg>
+
                                             </h4>
                                             
                                             <div class="header-prec-title">
@@ -228,18 +219,18 @@
                                                                     <td>{{$post['stock_name']}} </td>
                                                                     <td> {{$post['first_shamsi']}} </td>
                                                                     <td>{{$post['last_shamsi']}} </td>
-                                                                    <td class="tdd-green"> {{round($post['15daysChangePrice'],2)}} </td>
-                                                                    <td class="tdd-green"> {{round($post['30daysChangePrice'],2)}} </td>
-                                                                    <td class="tdd-green"> {{round($post['60daysChangePrice'],2)}}</td>
-                                                                    <td class="tdd-green"> {{round($post['15daysChangeMarket'],2)}} </td>
-                                                                    <td class="tdd-green"> {{round($post['30daysChangeMarket'],2)}} </td>
-                                                                    <td class="tdd-green"> {{round($post['60daysChangeMarket'],2)}} </td>
-                                                                    <td class="tdd-red"> {{round($post['15daysChangePrice_After'],2)}} </td>
-                                                                    <td class="tdd-red"> {{round($post['30daysChangePrice_After'],2)}} </td>
-                                                                    <td class="tdd-red"> {{round($post['60daysChangePrice_After'],2)}} </td>
-                                                                    <td class="tdd-red"> {{round($post['15daysChangeMarket_After'],2)}} </td>
-                                                                    <td class="tdd-red"> {{round($post['30daysChangeMarket_After'],2)}} </td>
-                                                                    <td class="tdd-red"> {{round($post['60daysChangeMarket_After'],2)}} </td>
+                                                                    <td @if($post['15daysChangePrice'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['15daysChangePrice'],2)}} </td>
+                                                                    <td @if($post['30daysChangePrice'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['30daysChangePrice'],2)}} </td>
+                                                                    <td @if($post['60daysChangePrice'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['60daysChangePrice'],2)}}</td>
+                                                                    <td @if($post['15daysChangeMarket'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['15daysChangeMarket'],2)}} </td>
+                                                                    <td @if($post['30daysChangeMarket'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['30daysChangeMarket'],2)}} </td>
+                                                                    <td @if($post['60daysChangeMarket'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['60daysChangeMarket'],2)}} </td>
+                                                                    <td @if($post['15daysChangePrice_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['15daysChangePrice_After'],2)}} </td>
+                                                                    <td @if($post['30daysChangePrice_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['30daysChangePrice_After'],2)}} </td>
+                                                                    <td @if($post['60daysChangePrice_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['60daysChangePrice_After'],2)}} </td>
+                                                                    <td @if($post['15daysChangeMarket_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['15daysChangeMarket_After'],2)}} </td>
+                                                                    <td @if($post['30daysChangeMarket_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['30daysChangeMarket_After'],2)}} </td>
+                                                                    <td @if($post['60daysChangeMarket_After'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($post['60daysChangeMarket_After'],2)}} </td>
                                                                 </tr>
                                                             @endforeach
                                                             </tbody>

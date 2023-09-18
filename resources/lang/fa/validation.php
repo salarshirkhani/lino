@@ -2,7 +2,6 @@
 
 return [
     'accepted'             => ':attribute باید پذیرفته شده باشد.',
-    'Whoops! Something went wrong.' => 'مشخصات وارد شده با اطلاعات ما سازگار نیست.',
     'active_url'           => 'آدرس :attribute معتبر نیست.',
     'after'                => ':attribute باید تاریخی بعد از :date باشد.',
     'after_or_equal'       => ':attribute باید تاریخی بعد از :date، یا مطابق با آن باشد.',
