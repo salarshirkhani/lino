@@ -13,7 +13,9 @@
     <Script src="{{asset('content/bootstrap/bootstrap.js')}}" defer></Script>
     <script src="{{asset('node_modules/chart.js/dist/chart.umd.js')}}" ></script>
     <script src="{{asset('js/main.js')}}" defer></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
 
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js" defer></script>
     
 </head>
 <style>

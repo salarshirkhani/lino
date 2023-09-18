@@ -36,14 +36,14 @@ new Chart("myChart", {
     }]
   },
   options: {
-    legend: {display: false},
-    title: {
-
+    plugins: {
+      legend: {
+        display: false
+      }
     }
   }
 });
 ///////////////
-
 
 function button_table(button) {
   if (button == "tab-1") {
@@ -123,4 +123,9 @@ myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
 
-
+///// sort table 
+new DataTable('#myTable', {
+  order: [[3, 'desc']],
+  info: false,
+  paging: false
+});

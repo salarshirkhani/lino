@@ -30,7 +30,7 @@
                                         <div class="buttonnn"> </div>
                                     </div>
                                     <!-- table -->
-                                    <table>
+                                    <table id="myTable">
                                         <thead>
                                             <tr>
                                                 <th>نماد
