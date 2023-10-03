@@ -100,7 +100,7 @@
                             </div>
 <!--                                 chart page account -->
                             <div class="box_3">
-                                <h3><span>روز</span> 70 </h3>
+                                <h3>70 <span>روز</span>  </h3>
 <!--                                     is chart ircular -->
                                 <div class="chart" data-percent="75" >
                                     

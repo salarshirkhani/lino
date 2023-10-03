@@ -1,5 +1,22 @@
 @extends('layouts.front')
 @section('content')
+<style>
+    .whatever {
+        display: none;
+    }
+    .what {
+        display: none;
+        position: absolute;
+        top: -37px;
+    }
+    .dataTables_filter {
+        display: flex;
+    }
+    table.dataTable > thead > tr > th, table.dataTable > thead > tr > td {
+        padding: 10px;
+         border-bottom: 0px solid rgba(0, 0, 0, 0.3);
+    }
+</style>
 <main >
     <div class="container-fluid">
         <div class="row">
@@ -15,7 +32,7 @@
                 <div class="Performance-of-percentages">
                     <div class="col-md-12">
                         <div class="button-stock">
-                            <button> سهام به تفکیک نماد </button>
+                            <button>رفتار درصدی </button>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -23,12 +40,11 @@
                             <div class="col-md-12">
                                 <div class="right-performance">
                                     <!-- table -->
-                                    <table >
+                                    <table id="myTable">
                                         <thead>
                                             <tr>
                                                 <th>نام درصدی
-                                                    <button>
-                                                        <i onclick="toggleSearchBox()"; >
+                                                    <i class="bboo">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18"
                                                         viewBox="0 0 19 18" fill="none">
                                                         <path
@@ -37,52 +53,35 @@
                                                             stroke-width="2.2" />
                                                         </svg>
                                                     </i> 
-                                                    </button>
-                                                    <div id="searchbox">
-                                                        <form action="" id="searchbox_1">
-                                                            <input type="search" name="q"  placeholder="نماد را جستجو کنید...">
-                                                            <button type="submit"></button>
-                                                        </form>
-                                                    </div>
                                                 </th>
 
 
-                                                <th> سود تجمعی
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20" fill="none">
-                                                        <path d="M1.79481 11.25H12.2048C13.1408 11.25 13.6088 12.2617 12.9484 12.8516L7.74336 17.5C7.33221 17.8672 6.66738 17.8672 6.2606 17.5L1.05124 12.8516C0.390771 12.2617 0.858783 11.25 1.79481 11.25ZM12.9484 7.14844L7.74336 2.5C7.33221 2.13281 6.66738 2.13281 6.2606 2.5L1.05124 7.14844C0.390771 7.73828 0.858783 8.75 1.79481 8.75H12.2048C13.1408 8.75 13.6088 7.73828 12.9484 7.14844Z" fill="#C8E0CA"/>
-                                                     </svg>
+                                                <th style="position: relative; left:10px;"> سود تجمعی
+
                                                 </th>
 
                                                 <th>  میانگین سود از هر سهم 
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20" fill="none">
-                                                        <path d="M1.79481 11.25H12.2048C13.1408 11.25 13.6088 12.2617 12.9484 12.8516L7.74336 17.5C7.33221 17.8672 6.66738 17.8672 6.2606 17.5L1.05124 12.8516C0.390771 12.2617 0.858783 11.25 1.79481 11.25ZM12.9484 7.14844L7.74336 2.5C7.33221 2.13281 6.66738 2.13281 6.2606 2.5L1.05124 7.14844C0.390771 7.73828 0.858783 8.75 1.79481 8.75H12.2048C13.1408 8.75 13.6088 7.73828 12.9484 7.14844Z" fill="#C8E0CA"/>
-                                                     </svg>
+
                                                 </th>
 
                                                 <th>  میانگین زمان حضور   
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20" fill="none">
-                                                        <path d="M1.79481 11.25H12.2048C13.1408 11.25 13.6088 12.2617 12.9484 12.8516L7.74336 17.5C7.33221 17.8672 6.66738 17.8672 6.2606 17.5L1.05124 12.8516C0.390771 12.2617 0.858783 11.25 1.79481 11.25ZM12.9484 7.14844L7.74336 2.5C7.33221 2.13281 6.66738 2.13281 6.2606 2.5L1.05124 7.14844C0.390771 7.73828 0.858783 8.75 1.79481 8.75H12.2048C13.1408 8.75 13.6088 7.73828 12.9484 7.14844Z" fill="#C8E0CA"/>
-                                                     </svg>
+
                                                 </th>
                                                 
                                                 <th>  میانگین رفتار سهام بعد از ورود   
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20" fill="none">
-                                                        <path d="M1.79481 11.25H12.2048C13.1408 11.25 13.6088 12.2617 12.9484 12.8516L7.74336 17.5C7.33221 17.8672 6.66738 17.8672 6.2606 17.5L1.05124 12.8516C0.390771 12.2617 0.858783 11.25 1.79481 11.25ZM12.9484 7.14844L7.74336 2.5C7.33221 2.13281 6.66738 2.13281 6.2606 2.5L1.05124 7.14844C0.390771 7.73828 0.858783 8.75 1.79481 8.75H12.2048C13.1408 8.75 13.6088 7.73828 12.9484 7.14844Z" fill="#C8E0CA"/>
-                                                     </svg>
+
                                                 </th>
 
                                                 <th>  میانگین رفتار سهام بعد از خروج   
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20" fill="none">
-                                                        <path d="M1.79481 11.25H12.2048C13.1408 11.25 13.6088 12.2617 12.9484 12.8516L7.74336 17.5C7.33221 17.8672 6.66738 17.8672 6.2606 17.5L1.05124 12.8516C0.390771 12.2617 0.858783 11.25 1.79481 11.25ZM12.9484 7.14844L7.74336 2.5C7.33221 2.13281 6.66738 2.13281 6.2606 2.5L1.05124 7.14844C0.390771 7.73828 0.858783 8.75 1.79481 8.75H12.2048C13.1408 8.75 13.6088 7.73828 12.9484 7.14844Z" fill="#C8E0CA"/>
-                                                     </svg>
+
                                                 </th>
                                                 
                                             </tr>
                                         </thead>
                                         <tbody >
-                                        @foreach ($Raftar_Stock as $item)    
+                                        @foreach ($Raftar_Darsadi_Tajmiei as $item)    
                                             <tr>
-                                                <td>{{$item['_id']}}</td>
+                                                <td>{{$item['code']}}</td>
                                                 <td>{{round($item['AllTimeChangePrice'],2)}}% </td>
                                                 <td @if($item['AllTimeChangeMarket'] < 0) class="tdd-red" @else class="tdd-green" @endif> {{round($item['AllTimeChangeMarket'],2)}}% </td>
                                                 <td> {{round($item['duration'],0)}}</td>    
@@ -142,19 +141,30 @@
                                             <h4 class="modal-title"> کارنامه درصدی ها 
 
                                             </h4>
-                                            
+                                            @php
+                                                $tajamoei=0;
+                                                $i=0;
+                                                $duaration=0;
+                                            @endphp
+                                            @foreach ($Raftar_Darsadi_Tajmiei->where('code',$item['code']) as $post)
+                                             @php   
+                                                $i++;
+                                                $tajamoei=$tajamoei+$post['AllTimeChangePrice'];
+                                                $duaration = $duaration +$post['duration'];
+                                            @endphp
+                                            @endforeach
                                             <div class="header-prec-title">
                                                 <div class="heder-prec-item">
                                                     <p> نام درصدی : {{$item['code']}} </p>
                                                 </div>
                                                 <div class="heder-prec-item">
-                                                    <p> سود تجمعی : 70% </p>
+                                                    <p> سود تجمعی : {{round($tajamoei,2)}}% </p>
                                                 </div>
                                                 <div class="heder-prec-item">
-                                                    <p> میانگین سود از هر سهم : 42% </p>
+                                                    <p> میانگین سود از هر سهم : {{round($tajamoei/$i,2)}}% </p>
                                                 </div>
                                                 <div class="heder-prec-item">
-                                                    <p> میانگین زمان حضور: 24 روز </p>
+                                                    <p> میانگین زمان حضور: {{round($duaration/$i,0)}} روز </p>
                                                 </div>
                                                 <div class="heder-prec-item">
                                                     <p> زرنگی : {{$item['Zerang']}} </p>
@@ -182,20 +192,18 @@
                                                             <div class="buttonnn"> </div>
                                                         </div>
                                                         <!-- table -->
-                                                        <table>
+                                                        <table class="display">
+                                                            <style>
+                                                                 .thhh{width: 10% !important;}   
+                                                                 .thh{width: 6% !important;} 
+                                                            </style>
                                                             <thead>
                                                                 <tr>
-                                                                    <th>نماد
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18"
-                                                                            viewBox="0 0 19 18" fill="none">
-                                                                            <path
-                                                                                d="M17.8988 16.9091L13.493 12.5454M9.08721 14.7273C8.21935 14.7273 7.35998 14.558 6.55817 14.229C5.75637 13.9001 5.02783 13.4179 4.41416 12.8101C3.80048 12.2023 3.31369 11.4808 2.98157 10.6866C2.64945 9.89251 2.47852 9.04137 2.47852 8.18181C2.47852 7.32225 2.64945 6.4711 2.98157 5.67697C3.31369 4.88284 3.80048 4.16127 4.41416 3.55347C5.02783 2.94567 5.75637 2.46354 6.55817 2.1346C7.35998 1.80566 8.21935 1.63635 9.08721 1.63635C10.8399 1.63635 12.5209 2.32596 13.7603 3.55347C14.9996 4.78098 15.6959 6.44584 15.6959 8.18181C15.6959 9.91777 14.9996 11.5826 13.7603 12.8101C12.5209 14.0377 10.8399 14.7273 9.08721 14.7273Z"
-                                                                                stroke="#589B57" stroke-opacity="0.31"
-                                                                                stroke-width="2.2" />
-                                                                        </svg>
+                                                                    <th class="thhh">نماد
+                                                                       
                                                                     </th>
-                                                                    <th> تاریخ ورود </th>
-                                                                    <th> تاریخ خروج </th>
+                                                                    <th class="thhh"> تاریخ ورود </th>
+                                                                    <th class="thhh"> تاریخ خروج </th>
                                                                     <th class="thh">بعد از 15 روز </th>
                                                                     <th class="thh"> بعد از 30 روز</th>
                                                                     <th class="thh"> بعد از 60 روز </th>

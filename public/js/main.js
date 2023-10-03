@@ -47,7 +47,7 @@ new Chart("myChart", {
 
 function button_table(button) {
   if (button == "tab-1") {
-    document.getElementById("table-1").style.zIndex = 0;
+    document.getElementById("myTable").style.zIndex = 0;
     document.getElementById("tab-2").style.opacity = 0.5;
     document.getElementById("tab-1").style.opacity = 1;
     document.getElementById("table-2").style.zIndex = -1;
@@ -56,7 +56,7 @@ function button_table(button) {
     document.getElementById("table-2").style.zIndex = 0;
     document.getElementById("tab-1").style.opacity = 0.5;
     document.getElementById("tab-2").style.opacity = 1;
-    document.getElementById("table-1").style.zIndex = -1;
+    document.getElementById("myTable").style.zIndex = -1;
   }
 } 
 
@@ -77,42 +77,106 @@ $(function () {
 
 /////////////
 
-var isSearchBoxVisible = false;
-var searchBox = document.getElementById("searchbox");
-var skipClose;
 
-function toggleSearchBox() {
-  showSearchBox(!isSearchBoxVisible);
-  skipCloseFn();
-}
+///// sort table 
+new DataTable('#myTable', {
+  order: [[3, 'desc']],
+  info: false,
+  paging: false,
+  language: {
+    searchPlaceholder: "جستجو کنید",
+    search: "",
+    emptyTable: "هیچ داده ای موجود نیست",
+    zeroRecords: "هیچ داده ای موجود نیست",
 
-function showSearchBox(show=true){
-   searchBox.style.display = show ? '' : 'none'; 
-   isSearchBoxVisible = show;
-}
+  } 
+});
+$('#myTable_filter input').addClass('whatever');
+const search = document.querySelector(".bboo")
+const searchbox = document.querySelector(".whatever")
 
-function skipCloseFn(){
-  skipClose = true;
-}
 
-showSearchBox(false);
+document.addEventListener("click", function () {
 
-// This can be directly given in HTML as well as given for outer search icon.
-searchBox.querySelector('input').addEventListener('click', skipCloseFn);
-//Can be included only if necessary
-searchBox.querySelector('button').addEventListener('click', function(e){
-  e.preventDefault();
-  skipCloseFn();
+  document.querySelector(".whatever").style.display = "none";
+  
 });
 
-
-document.addEventListener('click', function(){
-  if(!skipClose){
-    showSearchBox(false);
-  }
-  skipClose = false;
+search.addEventListener("click", function (event) {
+  event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
+  document.querySelector(".whatever").style.display = "block";
+  
+});
+searchbox.addEventListener("click", function (event) {
+  event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
 });
 
+new DataTable('table.display', {
+  info: false,
+  ordering: true,
+  paging: false,
+  language: {
+    searchPlaceholder: "جستجو کنید",
+    search: "",
+    emptyTable: "هیچ داده ای موجود نیست",
+    zeroRecords: "هیچ داده ای موجود نیست",
+  } 
+});
+new DataTable('#table-2', {
+  order: [[3, 'desc']],
+  info: false,
+  paging: false,
+  language: {
+    searchPlaceholder: "جستجو کنید",
+    search: "",
+  } 
+});
+
+$('table .display input').addClass('what');
+$('#table-2_filter input').addClass('what2');
+
+
+
+///modal_percentages
+const searchmo = document.querySelector(".bboomo")
+const searchboxmo = document.querySelector(".what")
+
+document.addEventListener("click", function () {
+
+  document.querySelector(".what").style.display = "none";
+});
+
+searchmo.addEventListener("click", function (event) {
+  event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
+  document.querySelector(".what").style.display = "block";
+});
+searchboxmo.addEventListener("click", function (event) {
+  event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
+});
+
+///
+
+
+
+////////////////
+///stok tab 2
+const searchmo2 = document.querySelector(".bboo2")
+const searchboxmo2 = document.querySelector(".what2")
+
+document.addEventListener("click", function () {
+
+  document.querySelector(".what2").style.display = "none";
+});
+
+searchmo2.addEventListener("click", function (event) {
+  event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
+  document.querySelector(".what2").style.display = "block";
+});
+searchboxmo2.addEventListener("click", function (event) {
+  event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
+});
+
+///
 
 
 ////modal 
@@ -123,9 +187,6 @@ myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
 
-///// sort table 
-new DataTable('#myTable', {
-  order: [[3, 'desc']],
-  info: false,
-  paging: false
-});
+
+
+

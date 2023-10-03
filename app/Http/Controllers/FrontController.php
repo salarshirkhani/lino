@@ -39,6 +39,16 @@ class FrontController extends Controller
         $Raftar_Stock=DB::table('Raftar_Stock')->get();
         $Smart_Darsadi=DB::table('Smart_Darsadi')->get();
         $Raftar_Darsadi_Tajmiei=DB::table('Raftar_Darsadi_Tajmiei')->get();
+        
+        //$show_tajmiei = new show_tajmiei();
+        //foreach( $Raftar_Darsadi_Tajmiei as $post){
+        //  $show_tajmiei['stock_name']= $post['stock_name'];
+          //  $show_tajmiei['first_shamsi']= $post['first_shamsi'];
+            //$show_tajmiei['last_shamsi']= $post['last_shamsi'];
+            //foreach( $Raftar_Darsadi_Tajmiei->where('code',$post['code']) as $item) {
+              //  $show_tajmiei['15daysChangePrice']=$show_tajmiei['15daysChangePrice']+ $item['stock_name'];
+            //}
+        //}
         return view('raftarstock',[
             'Raftar_Stock' => $Raftar_Stock,
             'Smart_Darsadi' => $Smart_Darsadi,

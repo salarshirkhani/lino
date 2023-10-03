@@ -8,6 +8,15 @@
     height: 60px;
     padding: 9px 13px;
 }
+body.login div.row-header {
+    display: flex;
+    width: 100%;
+    margin: 0px auto 10px auto;
+    align-items: center;
+    position: fixed;
+    left: 3px;
+    background: #f0ffed;
+}
 </style>
 <div class="box_login">
     <x-auth-validation-errors class="mb-4" :errors="$errors" />

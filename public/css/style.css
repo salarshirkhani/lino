@@ -886,7 +886,6 @@ body.Stock-information main .Stocks .Lino-perfor .right-performance table thead 
   color: #000;
   font-family: "B_Koodak_Bold";
   font-size: 17px;
-  padding: 0 9px 0 9px;
   border-right: solid 2px #F3FFF9;
 }
 body.Stock-information main .Stocks .Lino-perfor .right-performance table tbody {
@@ -2122,7 +2121,7 @@ body.account main .info_account .colume_2 .box_3 h3 {
   margin-bottom: -81px;
   margin-top: 15px;
   padding-top: 46px;
-  direction: ltr;
+  direction: rtl;
 }
 body.account main .info_account .colume_2 .box_3 .chart {
   width: 100%;
@@ -2193,7 +2192,6 @@ body.account main .info_account .colume_3 .box_4 .subscription_type table tbody 
   overflow-x: scroll;
 }
 body.account main .info_account .colume_3 .box_4 .subscription_type table tbody tr td {
-  width: -moz-fit-content;
   width: fit-content;
   color: #323337;
   font-family: "B_Koodak_Bold";
@@ -2251,7 +2249,6 @@ body.account main .info_account .colume_3 .box_5 .subscription_type table tbody 
   overflow-x: scroll;
 }
 body.account main .info_account .colume_3 .box_5 .subscription_type table tbody tr td {
-  width: -moz-fit-content;
   width: fit-content;
   color: #323337;
   font-family: "B_Koodak_Bold";
@@ -2264,4 +2261,6 @@ body.account main .info_account .colume_3 .box_5 .subscription_type table tbody 
 body.account main .info_account .colume_3 .box_5 .subscription_type td.td-box5 {
   font-size: 12px;
   padding: 4px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
