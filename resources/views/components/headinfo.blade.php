@@ -1,3 +1,9 @@
+<style>
+    body main .content .main-row > .col-md-3 .item-main::after {
+        top: -145px !important;
+    }
+</style>
+
 <div class="content">
     <div class="main-row">
         <div class="col-md-3">

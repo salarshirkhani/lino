@@ -3,12 +3,19 @@
 <style>
     .whatever {
         display: none;
+        margin-right: 40px;
     }
     .what {
         display: none;
-        position: absolute;
-        top: -37px;
+        position: relative;
+        margin-right: 30px;
     }
+    .what2 {
+        position: absolute;
+        margin-right: -16px;
+        top: -36px;
+    }
+    
     .dataTables_filter {
         display: flex;
     }
@@ -16,6 +23,73 @@
         padding: 10px;
          border-bottom: 0px solid rgba(0, 0, 0, 0.3);
     }
+    /* search box style */
+    .dataTables_wrapper .dataTables_filter input {
+        border: 0px solid #aaa;
+        border-radius: 20px 20px 0px 0px;
+        padding: 6.5px 39px;
+        background-color: #a5ffa9;
+        color: black;
+        right: 48px;
+        font-family: 'B_Koodak_Bold';
+    }
+    body.Percentages main .Performance-of-percentages .of-percentages .right-performance table thead tr th {
+        color: #000;
+        font-family: "B_Koodak_Bold";
+        font-size: 16px;
+        width: 17% !important;
+        word-break: keep-all;
+        display: flex;
+        justify-content: center;
+        padding: 10px 26px 10px 0px;
+        text-align: center;
+}
+        body.Percentages main .Performance-of-percentages .of-percentages .right-performance table tbody tr td {
+            color: #000;
+            font-family: "B_Koodak_Bold";
+            font-size: 15px;
+            padding: 8px 21px 8px 21px;
+            width: 17.5%;
+            word-break: break-all;
+        }
+        .Performance-of-percentages .of-percentages .right-performance table tbody tr td.tdd-green {
+            width: 17% !important;
+            border-right: none;
+        }
+        .Performance-of-percentages .of-percentages .right-performance table tbody tr td.tdd-red {
+            width: 17% !important;
+            border-right: none;
+        }
+        table.dataTable > thead > tr > th, table.dataTable > thead > tr > td {
+            padding: 10px;
+            border-bottom: 0px solid rgba(0, 0, 0, 0.3);
+        }
+        .dataTables_wrapper .dataTables_filter {
+            float: none;
+            text-align: right;
+        }
+
+        body.Stock-information main .Stocks .Lino-perfor .right-performance .title-table div.button {
+            margin-left: 7%;
+        }
+        table.dataTable > thead > tr > th, table.dataTable > thead > tr > td {
+            padding: 10px;
+            word-break: break-word;
+            border-bottom: 0px solid rgba(0, 0, 0, 0.3);
+        }
+        table.dataTable.no-footer {
+            border-bottom: 0px solid rgba(0, 0, 0, 0.3);
+        }body.Percentages main .Performance-of-percentages .of-percentages {
+            padding: 30px 20px 30px 26px;
+        }
+        body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table .head-table div.buttonnn {
+            width: 28%;
+            margin-left: 0px;
+        }
+        body.Percentages main .Smart-and-knowledgeable .Smart-and .right-performance .modal-body .pop-table table thead tr th {
+            padding-left: 2px;
+            padding-right: 25px;
+        }
 </style>
 <main >
     <div class="container-fluid">
@@ -110,10 +184,20 @@
                                 <div class="right-performance">
                                     
                                     <!-- table -->
-                                    <table >
+                                    <table id="myTable2">
                                         <thead>
                                             <tr>
-                                                <th>نام درصدی</th>
+                                                <th>نام درصدی
+                                                    <i class="bboomo">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18"
+                                                            viewBox="0 0 19 18" fill="none">
+                                                            <path
+                                                                d="M17.8988 16.9091L13.493 12.5454M9.08721 14.7273C8.21935 14.7273 7.35998 14.558 6.55817 14.229C5.75637 13.9001 5.02783 13.4179 4.41416 12.8101C3.80048 12.2023 3.31369 11.4808 2.98157 10.6866C2.64945 9.89251 2.47852 9.04137 2.47852 8.18181C2.47852 7.32225 2.64945 6.4711 2.98157 5.67697C3.31369 4.88284 3.80048 4.16127 4.41416 3.55347C5.02783 2.94567 5.75637 2.46354 6.55817 2.1346C7.35998 1.80566 8.21935 1.63635 9.08721 1.63635C10.8399 1.63635 12.5209 2.32596 13.7603 3.55347C14.9996 4.78098 15.6959 6.44584 15.6959 8.18181C15.6959 9.91777 14.9996 11.5826 13.7603 12.8101C12.5209 14.0377 10.8399 14.7273 9.08721 14.7273Z"
+                                                                stroke="#ffffff" stroke-opacity="0.31"
+                                                                stroke-width="2.2" />
+                                                            </svg>
+                                                    </i> 
+                                                </th>
                                                 <th> تعداد زرنگی </th> 
                                                 <th>تعداد خبرداری</th> 
                                                 <th>تعدادسودگیری</th> 
@@ -192,7 +276,7 @@
                                                             <div class="buttonnn"> </div>
                                                         </div>
                                                         <!-- table -->
-                                                        <table class="display">
+                                                        <table id="table-2" class="display">
                                                             <style>
                                                                  .thhh{width: 10% !important;}   
                                                                  .thh{width: 6% !important;} 
@@ -200,7 +284,15 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th class="thhh">نماد
-                                                                       
+                                                                        <i class="bboo2">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18"
+                                                                            viewBox="0 0 19 18" fill="none">
+                                                                            <path
+                                                                                d="M17.8988 16.9091L13.493 12.5454M9.08721 14.7273C8.21935 14.7273 7.35998 14.558 6.55817 14.229C5.75637 13.9001 5.02783 13.4179 4.41416 12.8101C3.80048 12.2023 3.31369 11.4808 2.98157 10.6866C2.64945 9.89251 2.47852 9.04137 2.47852 8.18181C2.47852 7.32225 2.64945 6.4711 2.98157 5.67697C3.31369 4.88284 3.80048 4.16127 4.41416 3.55347C5.02783 2.94567 5.75637 2.46354 6.55817 2.1346C7.35998 1.80566 8.21935 1.63635 9.08721 1.63635C10.8399 1.63635 12.5209 2.32596 13.7603 3.55347C14.9996 4.78098 15.6959 6.44584 15.6959 8.18181C15.6959 9.91777 14.9996 11.5826 13.7603 12.8101C12.5209 14.0377 10.8399 14.7273 9.08721 14.7273Z"
+                                                                                stroke="#589B57" stroke-opacity="0.31"
+                                                                                stroke-width="2.2" />
+                                                                            </svg>
+                                                                        </i>
                                                                     </th>
                                                                     <th class="thhh"> تاریخ ورود </th>
                                                                     <th class="thhh"> تاریخ خروج </th>

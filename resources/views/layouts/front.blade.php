@@ -25,10 +25,10 @@
 }
 
 .footer{
-    margin-top: -90px;
-    position: fixed;
+    margin-top: auto;
+    position: relative;
     width: 100%;
-    bottom: 0px;
+    bottom: 0%;
     z-index: -1;
 }
 table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td {
@@ -47,10 +47,10 @@ table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, ta
                         <div class="calendar-header">
                             <img class="calender" src="{{asset('img/Vector.png')}}" alt="calender">
                             <img class="calender-item" src="{{asset('img/Ellipse 5.png')}}" alt="calender">
-                            <p class="calender-item-1">{{ Facades\Verta::format('Y')}}</p>
+                            <p class="calender-item-1" style="font-size: 11px;">{{ Facades\Verta::format('Y')}}</p>
                             <p class="calender-item-2">{{ Facades\Verta::format('F')}}
                             <p>
-                            <p class="calender-item-3">{{ Facades\Verta::format('d')}}</p>
+                            <p class="calender-item-3" style="top: -41px !important;  font-size: 13px;">{{ Facades\Verta::format('d')}}</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -103,7 +103,7 @@ table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, ta
     let time;
     setInterval(() => {
       a = new Date();
-      time = a.getHours() + ':' + a.getMinutes();
+      time = (a.getHours() < 10 ? '0' : '') + a.getHours() + ':' + (a.getMinutes() < 10 ? '0' : '') + a.getMinutes();
       document.getElementById('time').innerHTML = time;
     }, 1000);
   </script>

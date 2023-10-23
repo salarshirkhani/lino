@@ -1,6 +1,6 @@
 @extends('layouts.front')
 @section('content')
-<main  >
+<main  style="min-height: 91%;">
     <div class="container-fluid">
         <div class="row">
             <!-- strat side-bar && menu -->
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                 -->
-                    <div class="col-lg-5">
+                    <div class="col-lg-7">
                         <div class="colume_2">
                             <div class="box_2">
                                 <div class="subscription_type">
@@ -100,7 +100,7 @@
                             </div>
 <!--                                 chart page account -->
                             <div class="box_3">
-                                <h3>70 <span>روز</span>  </h3>
+                                <h3><span style="font-family: 'B_Koodak_Bold';">70 روز</span> </h3>
 <!--                                     is chart ircular -->
                                 <div class="chart" data-percent="75" >
                                     
@@ -109,8 +109,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="colume_3">
+                    <div class="col-lg-5">
+                        <div class="colume_3" style="display: none;">
                             <div class="box_4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
                                     <path d="M28.9457 14.1428H4.05428C3.70075 14.1357 3.35014 14.2081 3.02842 14.3549C2.7067 14.5016 2.42212 14.7188 2.19575 14.9905C1.96938 15.2621 1.80703 15.5812 1.72071 15.9241C1.6344 16.267 1.62634 16.625 1.69714 16.9714L4.28999 29.9357C4.40019 30.4761 4.69642 30.9608 5.12712 31.3053C5.55781 31.6499 6.09569 31.8325 6.64714 31.8214H26.3529C26.9043 31.8325 27.4422 31.6499 27.8729 31.3053C28.3036 30.9608 28.5998 30.4761 28.71 29.9357L31.3029 16.9714C31.3736 16.625 31.3656 16.267 31.2793 15.9241C31.193 15.5812 31.0306 15.2621 30.8042 14.9905C30.5779 14.7188 30.2933 14.5016 29.9716 14.3549C29.6498 14.2081 29.2992 14.1357 28.9457 14.1428ZM21.2143 5.89282L25.9286 14.1428L21.2143 5.89282ZM7.07142 14.1428L11.7857 5.89282L7.07142 14.1428Z" fill="white"/>

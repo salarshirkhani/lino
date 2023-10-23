@@ -76,8 +76,8 @@ $(function () {
 })
 
 /////////////
-
-
+// const no_found = document.getElementById("dataTables_empty")
+// no_found.text = "نتیجه یافت نشد"
 ///// sort table 
 new DataTable('#myTable', {
   order: [[3, 'desc']],
@@ -88,30 +88,23 @@ new DataTable('#myTable', {
     search: "",
     emptyTable: "هیچ داده ای موجود نیست",
     zeroRecords: "هیچ داده ای موجود نیست",
-
   } 
 });
-$('#myTable_filter input').addClass('whatever');
-const search = document.querySelector(".bboo")
-const searchbox = document.querySelector(".whatever")
 
 
-document.addEventListener("click", function () {
-
-  document.querySelector(".whatever").style.display = "none";
-  
+new DataTable('#myTable2', {
+  order: [[3, 'desc']],
+  info: false,
+  paging: false,
+  language: {
+    searchPlaceholder: "جستجو کنید",
+    search: "",
+    emptyTable: "هیچ داده ای موجود نیست",
+    zeroRecords: "هیچ داده ای موجود نیست",
+  } 
 });
-
-search.addEventListener("click", function (event) {
-  event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
-  document.querySelector(".whatever").style.display = "block";
-  
-});
-searchbox.addEventListener("click", function (event) {
-  event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
-});
-
-new DataTable('table.display', {
+new DataTable('.display', {
+  order: [[3, 'desc']],
   info: false,
   ordering: true,
   paging: false,
@@ -122,17 +115,20 @@ new DataTable('table.display', {
     zeroRecords: "هیچ داده ای موجود نیست",
   } 
 });
-new DataTable('#table-2', {
-  order: [[3, 'desc']],
-  info: false,
-  paging: false,
-  language: {
-    searchPlaceholder: "جستجو کنید",
-    search: "",
-  } 
-});
+// new DataTable('#table-2', {
+//   order: [[3, 'desc']],
+//   info: false,
+//   paging: false,
+//   language: {
+//     searchPlaceholder: "جستجو کنید",
+//     search: "",
+//     emptyTable: "هیچ داده ای موجود نیست",
+//     zeroRecords: "هیچ داده ای موجود نیست",
+//   } 
+// });
 
-$('table .display input').addClass('what');
+$('#myTable_filter input').addClass('whatever');
+$('#myTable2_filter input').addClass('what');
 $('#table-2_filter input').addClass('what2');
 
 
@@ -156,36 +152,56 @@ searchboxmo.addEventListener("click", function (event) {
 
 ///
 
+const search = document.querySelector(".bboo")
+const searchbox = document.querySelector(".whatever")
 
-
-////////////////
-///stok tab 2
-const searchmo2 = document.querySelector(".bboo2")
-const searchboxmo2 = document.querySelector(".what2")
 
 document.addEventListener("click", function () {
 
-  document.querySelector(".what2").style.display = "none";
+  document.querySelector(".whatever").style.display = "none";
+  
 });
 
-searchmo2.addEventListener("click", function (event) {
+search.addEventListener("click", function (event) {
   event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
-  document.querySelector(".what2").style.display = "block";
+  document.querySelector(".whatever").style.display = "block";
+  
 });
-searchboxmo2.addEventListener("click", function (event) {
+searchbox.addEventListener("click", function (event) {
   event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
 });
+
+////////////////
+///stok tab 2
+const searchmo2 = document.querySelectorAll(".bboo2")
+const searchboxmo2 = document.querySelectorAll(".what2")
+for (let index = 0; index < searchboxmo2.length; index++) {
+  document.addEventListener("click", function () {
+
+    searchboxmo2[index].style.display = "none";
+  });
+  
+  searchmo2[index].addEventListener("click", function (event) {
+    event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
+    searchboxmo2[index].style.display = "block";
+  });
+  searchboxmo2[index].addEventListener("click", function (event) {
+    event.stopPropagation(); // جلوگیری از انتشار رویداد به سرچ باکس
+  });
+  
+}
+
 
 ///
 
 
-////modal 
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
+// ////modal 
+// var myModal = document.getElementById('myModal')
+// var myInput = document.getElementById('myInput')
 
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
+// myModal.addEventListener('shown.bs.modal', function () {
+//   myInput.focus()
+// })
 
 
 
